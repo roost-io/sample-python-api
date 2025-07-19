@@ -1,0 +1,4322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"15a4b208-7334-476f-81dc-1b1852f2c85b",karate_version:"1.5.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>pet_findByStatus_get</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-19 08:56:23 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:34]"><span>[1.1:34]</span> <span>Find pets by status with valid status values</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:34]"><span>[1.2:34]</span> <span>Find pets by status with valid status values</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.3:34]"><span>[1.3:34]</span> <span>Find pets by status with valid status values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.4:34]"><span>[1.4:34]</span> <span>Find pets by status with valid status values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.5:34]"><span>[1.5:34]</span> <span>Find pets by status with valid status values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.6:34]"><span>[1.6:34]</span> <span>Find pets by status with valid status values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.7:34]"><span>[1.7:34]</span> <span>Find pets by status with valid status values</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:36]"><span>[2:36]</span> <span>Find pets by status with invalid status value</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:43]"><span>[3:43]</span> <span>Find pets by status with no status value</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">pet_findByStatus_get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Find Pets by Status</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:34]</span>
+                <span class="scenario-name">Find pets by status with valid status values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">20:56:19.729 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.729 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.729 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param status = available</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.21">20:56:19.733 pet_findByStatus_get.feature:21
+And param status = available
+js failed:
+&gt;&gt;&gt;&gt;
+01: available
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;available&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+pet_findByStatus_get.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:34]</span>
+                <span class="scenario-name">Find pets by status with valid status values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">20:56:19.735 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.735 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.736 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param status = pending</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.21">20:56:19.738 pet_findByStatus_get.feature:21
+And param status = pending
+js failed:
+&gt;&gt;&gt;&gt;
+01: pending
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;pending&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+pet_findByStatus_get.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:34]</span>
+                <span class="scenario-name">Find pets by status with valid status values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.14">20:56:19.739 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.740 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.740 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param status = sold</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.21">20:56:19.742 pet_findByStatus_get.feature:21
+And param status = sold
+js failed:
+&gt;&gt;&gt;&gt;
+01: sold
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;sold&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+pet_findByStatus_get.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:34]</span>
+                <span class="scenario-name">Find pets by status with valid status values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>626</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.4:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.4:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.14">20:56:19.743 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.744 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:19.744 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = [&#39;available&#39;, &#39;pending&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">607</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.22">20:56:19.747 request:
+1 &gt; GET https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available&amp;status=pending
+1 &gt; Accept: application/json
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:56:20.351 response time in milliseconds: 603
+1 &lt; 200
+1 &lt; Date: Sat, 19 Jul 2025 20:56:20 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 7775
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+[{&quot;id&quot;:9,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;Lion 3&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag3&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag4&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:12345,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;dogs&quot;},&quot;name&quot;:&quot;&quot;,&quot;photoUrls&quot;:[&quot;https://fluffydog.img&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:4,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Dog%201&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:8,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;Lion%202&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1300723004438466766,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:8129297136310048805,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1137245979522154714,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:7,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;Lion%201&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:5902475744431758849,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:3632571136365581133,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:8831605011107266754,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5DV?{+~w9-?2%&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:111,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;tommy&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:998,&quot;name&quot;:&quot;Simon&#39;s Dog&quot;,&quot;photoUrls&quot;:[&quot;cute-photo.jpg&quot;,&quot;goodboy.png&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;animal&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;dog&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752937452553,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940425477,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940426520,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940456800,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940492384,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940493381,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940561918,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941243258,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:999,&quot;name&quot;:&quot;Simon&#39;s Cat&quot;,&quot;photoUrls&quot;:[&quot;[great-photo1.jpg&quot;,&quot;purrfect-pic.png]&quot;,&quot;/tmp/inflector4235280554823553368.tmp&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;animal&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;cat&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:11,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1287138758235,&quot;name&quot;:&quot;Woofy Mc Woof&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:4601002281231536319,&quot;category&quot;:{&quot;id&quot;:1352470862106004459,&quot;name&quot;:&quot;7^)K[|&quot;},&quot;name&quot;:&quot;TPa&lt;j_1F]PAjgz*17n:C]6XvOlz&#39;`7FK[(]-7C&amp;o&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:1035064212071298965,&quot;name&quot;:&quot;B,^Q`6*`FVvJ7^&quot;},{&quot;id&quot;:2754906777840019049,&quot;name&quot;:&quot;T1KF5P=tN&quot;},{&quot;id&quot;:3789180535090686210,&quot;name&quot;:&quot;+Z^f~GP!f.!rt&quot;},{&quot;id&quot;:1263233678447357766,&quot;name&quot;:&quot;`4#&#39;.~9mk90.yNhMI/ikrAx=&amp;y!|F=oZNYebM|`&lt;BjC1hMGyt&quot;},{&quot;id&quot;:7853340899439686392,&quot;name&quot;:&quot;.U,EjKUpGNB4^OinlUjAe!&quot;},{&quot;id&quot;:4915187511840344116,&quot;name&quot;:&quot;7TUj7GN:xP]&gt;_dQ&gt;0L|po|T$wW96n}r+&gt;rk0eQuWGtuVP`L+&quot;},{&quot;id&quot;:1146565428877349759,&quot;name&quot;:&quot;&#39;cRSoAfmOTpI$O/Z_q71D?).&quot;},{&quot;id&quot;:730592368848475167,&quot;name&quot;:&quot;_#s;x&amp;JF{SVCOFr&quot;},{&quot;id&quot;:4233609513665331041,&quot;name&quot;:&quot;}/1j0Iq5=cwS%hUq$_v(DhZQOuXL|hC~HuFNtSOc$Gb;()[cu-X]]9(:GE&quot;},{&quot;id&quot;:6062516839594145730,&quot;name&quot;:&quot;t+)gMstM&gt;{y11Y1+6)E1[4,=t{hH72b,umM(8WG&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954088377,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954156945,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954193569,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954273061,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954531567,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Buddy&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.5:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.5:34]</span>
+                <span class="scenario-name">Find pets by status with valid status values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>611</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.5:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.14">20:56:20.374 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:20.374 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:20.375 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = [&#39;pending&#39;, &#39;sold&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">605</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.22">20:56:20.377 request:
+1 &gt; GET https://petstore3.swagger.io/api/v3/pet/findByStatus?status=pending&amp;status=sold
+1 &gt; Accept: application/json
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:56:20.980 response time in milliseconds: 602
+1 &lt; 200
+1 &lt; Date: Sat, 19 Jul 2025 20:56:20 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 5447
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+[{&quot;id&quot;:5293799868997371243,&quot;category&quot;:{&quot;id&quot;:5972318786876805187,&quot;name&quot;:&quot;wy4quz]aSUVi&gt;SSZdTqqPhpaF).7/Ar!*NRd#4r&quot;},&quot;name&quot;:&quot;jM4lX&amp;$`Wv&gt;A&amp;UrR`F}]O4Z[I#{ri7a*SDW^{FIQfmw_&lt;H&#39;=ck&quot;,&quot;photoUrls&quot;:[&quot;FS,&#39;fA==_YqMPU2^ab;QLq&quot;],&quot;tags&quot;:[{&quot;id&quot;:1393349714967314375,&quot;name&quot;:&quot;mm+^,&amp;)R[?*;ZUf9gjkd1x{1!L7-JAFpLhXq$OaByp&quot;},{&quot;id&quot;:5008220396079301022,&quot;name&quot;:&quot;?R]ED`t+ZIGP*WP?{Et[_kJ}o37HZzOV=)+V}9eaxT&lt;jY;|oI{oc&quot;},{&quot;id&quot;:744152539485183344,&quot;name&quot;:&quot;PAx3`SBG&quot;},{&quot;id&quot;:5396712198010770690,&quot;name&quot;:&quot;G&amp;MNUsIBk&lt;HhU&lt;JK9cZ.,&amp;EGj5~eAcdsB;Bta}w-1KOMLKln.}JtJzOoqQg&#39;&amp;7&quot;},{&quot;id&quot;:8540371335048257604,&quot;name&quot;:&quot;];{nx&#39;cxD~CvYRJT{(&quot;},{&quot;id&quot;:7438485084087738062,&quot;name&quot;:&quot;z,+v+8[c&amp;3A-sW.T(F*u&#39;cak&#39;9;$C.]I9Qd!t4St]T*BD&amp;pH`Vmvrp#.T]&quot;},{&quot;id&quot;:9163540804729395987,&quot;name&quot;:&quot;0j[KqwfQwK!]a&lt;S&#39;`*w17Z5Q9f%W2uE-dVb~%#x9:_H}BQV6M&quot;},{&quot;id&quot;:8935552871270857127,&quot;name&quot;:&quot;u%cfaZ3kd1-LtmIJ8?os/oz&gt;&quot;}],&quot;status&quot;:&quot;pending&quot;},{&quot;id&quot;:8160936549077815550,&quot;category&quot;:{&quot;id&quot;:5972318786876805187,&quot;name&quot;:&quot;wy4quz]aSUVi&gt;SSZdTqqPhpaF).7/Ar!*NRd#4r&quot;},&quot;name&quot;:&quot;jM4lX&amp;$`Wv&gt;A&amp;UrR`F}]O4Z[I#{ri7a*SDW^{FIQfmw_&lt;H&#39;=ck&quot;,&quot;photoUrls&quot;:[&quot;FS,&#39;fA==_YqMPU2^ab;QLq&quot;],&quot;tags&quot;:[{&quot;id&quot;:1393349714967314375,&quot;name&quot;:&quot;mm+^,&amp;)R[?*;ZUf9gjkd1x{1!L7-JAFpLhXq$OaByp&quot;},{&quot;id&quot;:5008220396079301022,&quot;name&quot;:&quot;?R]ED`t+ZIGP*WP?{Et[_kJ}o37HZzOV=)+V}9eaxT&lt;jY;|oI{oc&quot;},{&quot;id&quot;:744152539485183344,&quot;name&quot;:&quot;PAx3`SBG&quot;},{&quot;id&quot;:5396712198010770690,&quot;name&quot;:&quot;G&amp;MNUsIBk&lt;HhU&lt;JK9cZ.,&amp;EGj5~eAcdsB;Bta}w-1KOMLKln.}JtJzOoqQg&#39;&amp;7&quot;},{&quot;id&quot;:8540371335048257604,&quot;name&quot;:&quot;];{nx&#39;cxD~CvYRJT{(&quot;},{&quot;id&quot;:7438485084087738062,&quot;name&quot;:&quot;z,+v+8[c&amp;3A-sW.T(F*u&#39;cak&#39;9;$C.]I9Qd!t4St]T*BD&amp;pH`Vmvrp#.T]&quot;},{&quot;id&quot;:9163540804729395987,&quot;name&quot;:&quot;0j[KqwfQwK!]a&lt;S&#39;`*w17Z5Q9f%W2uE-dVb~%#x9:_H}BQV6M&quot;},{&quot;id&quot;:8935552871270857127,&quot;name&quot;:&quot;u%cfaZ3kd1-LtmIJ8?os/oz&gt;&quot;}],&quot;status&quot;:&quot;pending&quot;},{&quot;id&quot;:6172030067885498030,&quot;category&quot;:{&quot;id&quot;:5972318786876805187,&quot;name&quot;:&quot;wy4quz]aSUVi&gt;SSZdTqqPhpaF).7/Ar!*NRd#4r&quot;},&quot;name&quot;:&quot;jM4lX&amp;$`Wv&gt;A&amp;UrR`F}]O4Z[I#{ri7a*SDW^{FIQfmw_&lt;H&#39;=ck&quot;,&quot;photoUrls&quot;:[&quot;FS,&#39;fA==_YqMPU2^ab;QLq&quot;],&quot;tags&quot;:[{&quot;id&quot;:1393349714967314375,&quot;name&quot;:&quot;mm+^,&amp;)R[?*;ZUf9gjkd1x{1!L7-JAFpLhXq$OaByp&quot;},{&quot;id&quot;:5008220396079301022,&quot;name&quot;:&quot;?R]ED`t+ZIGP*WP?{Et[_kJ}o37HZzOV=)+V}9eaxT&lt;jY;|oI{oc&quot;},{&quot;id&quot;:744152539485183344,&quot;name&quot;:&quot;PAx3`SBG&quot;},{&quot;id&quot;:5396712198010770690,&quot;name&quot;:&quot;G&amp;MNUsIBk&lt;HhU&lt;JK9cZ.,&amp;EGj5~eAcdsB;Bta}w-1KOMLKln.}JtJzOoqQg&#39;&amp;7&quot;},{&quot;id&quot;:8540371335048257604,&quot;name&quot;:&quot;];{nx&#39;cxD~CvYRJT{(&quot;},{&quot;id&quot;:7438485084087738062,&quot;name&quot;:&quot;z,+v+8[c&amp;3A-sW.T(F*u&#39;cak&#39;9;$C.]I9Qd!t4St]T*BD&amp;pH`Vmvrp#.T]&quot;},{&quot;id&quot;:9163540804729395987,&quot;name&quot;:&quot;0j[KqwfQwK!]a&lt;S&#39;`*w17Z5Q9f%W2uE-dVb~%#x9:_H}BQV6M&quot;},{&quot;id&quot;:8935552871270857127,&quot;name&quot;:&quot;u%cfaZ3kd1-LtmIJ8?os/oz&gt;&quot;}],&quot;status&quot;:&quot;pending&quot;},{&quot;id&quot;:9176981503846270867,&quot;category&quot;:{&quot;id&quot;:5972318786876805187,&quot;name&quot;:&quot;wy4quz]aSUVi&gt;SSZdTqqPhpaF).7/Ar!*NRd#4r&quot;},&quot;name&quot;:&quot;jM4lX&amp;$`Wv&gt;A&amp;UrR`F}]O4Z[I#{ri7a*SDW^{FIQfmw_&lt;H&#39;=ck&quot;,&quot;photoUrls&quot;:[&quot;FS,&#39;fA==_YqMPU2^ab;QLq&quot;],&quot;tags&quot;:[{&quot;id&quot;:1393349714967314375,&quot;name&quot;:&quot;mm+^,&amp;)R[?*;ZUf9gjkd1x{1!L7-JAFpLhXq$OaByp&quot;},{&quot;id&quot;:5008220396079301022,&quot;name&quot;:&quot;?R]ED`t+ZIGP*WP?{Et[_kJ}o37HZzOV=)+V}9eaxT&lt;jY;|oI{oc&quot;},{&quot;id&quot;:744152539485183344,&quot;name&quot;:&quot;PAx3`SBG&quot;},{&quot;id&quot;:5396712198010770690,&quot;name&quot;:&quot;G&amp;MNUsIBk&lt;HhU&lt;JK9cZ.,&amp;EGj5~eAcdsB;Bta}w-1KOMLKln.}JtJzOoqQg&#39;&amp;7&quot;},{&quot;id&quot;:8540371335048257604,&quot;name&quot;:&quot;];{nx&#39;cxD~CvYRJT{(&quot;},{&quot;id&quot;:7438485084087738062,&quot;name&quot;:&quot;z,+v+8[c&amp;3A-sW.T(F*u&#39;cak&#39;9;$C.]I9Qd!t4St]T*BD&amp;pH`Vmvrp#.T]&quot;},{&quot;id&quot;:9163540804729395987,&quot;name&quot;:&quot;0j[KqwfQwK!]a&lt;S&#39;`*w17Z5Q9f%W2uE-dVb~%#x9:_H}BQV6M&quot;},{&quot;id&quot;:8935552871270857127,&quot;name&quot;:&quot;u%cfaZ3kd1-LtmIJ8?os/oz&gt;&quot;}],&quot;status&quot;:&quot;pending&quot;},{&quot;id&quot;:6062220222461003933,&quot;category&quot;:{&quot;id&quot;:5972318786876805187,&quot;name&quot;:&quot;wy4quz]aSUVi&gt;SSZdTqqPhpaF).7/Ar!*NRd#4r&quot;},&quot;name&quot;:&quot;jM4lX&amp;$`Wv&gt;A&amp;UrR`F}]O4Z[I#{ri7a*SDW^{FIQfmw_&lt;H&#39;=ck&quot;,&quot;photoUrls&quot;:[&quot;2^ab;QLq$U,H*QYuvX=-hUO5%:f~JYS|z.xRN#bh;5ZYzif/Cvi?aJGb&#39;G:&lt;d~A%&quot;],&quot;tags&quot;:[{&quot;id&quot;:1393349714967314375,&quot;name&quot;:&quot;mm+^,&amp;)R[?*;ZUf9gjkd1x{1!L7-JAFpLhXq$OaByp&quot;},{&quot;id&quot;:5008220396079301022,&quot;name&quot;:&quot;?R]ED`t+ZIGP*WP?{Et[_kJ}o37HZzOV=)+V}9eaxT&lt;jY;|oI{oc&quot;},{&quot;id&quot;:744152539485183344,&quot;name&quot;:&quot;PAx3`SBG&quot;},{&quot;id&quot;:5396712198010770690,&quot;name&quot;:&quot;G&amp;MNUsIBk&lt;HhU&lt;JK9cZ.,&amp;EGj5~eAcdsB;Bta}w-1KOMLKln.}JtJzOoqQg&#39;&amp;7&quot;},{&quot;id&quot;:8540371335048257604,&quot;name&quot;:&quot;];{nx&#39;cxD~CvYRJT{(&quot;},{&quot;id&quot;:7438485084087738062,&quot;name&quot;:&quot;z,+v+8[c&amp;3A-sW.T(F*u&#39;cak&#39;9;$C.]I9Qd!t4St]T*BD&amp;pH`Vmvrp#.T]&quot;},{&quot;id&quot;:9163540804729395987,&quot;name&quot;:&quot;0j[KqwfQwK!]a&lt;S&#39;`*w17Z5Q9f%W2uE-dVb~%#x9:_H}BQV6M&quot;},{&quot;id&quot;:8935552871270857127,&quot;name&quot;:&quot;u%cfaZ3kd1-LtmIJ8?os/oz&gt;&quot;}],&quot;status&quot;:&quot;pending&quot;},{&quot;id&quot;:11,&quot;category&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;kitty&quot;,&quot;photoUrls&quot;:[&quot;http://example.com/photo2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;pending&quot;},{&quot;id&quot;:4601002281231536319,&quot;category&quot;:{&quot;id&quot;:1352470862106004459,&quot;name&quot;:&quot;7^)K[||G=?26mkjq8gN5&#39;ooFLUr&amp;&#39;iG)&#39;5:&quot;},&quot;name&quot;:&quot;B%2C%5EQ%606%2A%60FVvJ7%5E&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:1035064212071298965,&quot;name&quot;:&quot;B,^Q`6*`FVvJ7^&quot;},{&quot;id&quot;:2754906777840019049,&quot;name&quot;:&quot;T1KF5P=tN&quot;},{&quot;id&quot;:3789180535090686210,&quot;name&quot;:&quot;+Z^f~GP!f.!rt&quot;},{&quot;id&quot;:1263233678447357766,&quot;name&quot;:&quot;`4#&#39;.~9mk90.yNhMI/ikrAx=&amp;y!|F=oZNYebM|`&lt;BjC1hMGyt&quot;},{&quot;id&quot;:7853340899439686392,&quot;name&quot;:&quot;.U,EjKUpGNB4^OinlUjAe!&quot;},{&quot;id&quot;:4915187511840344116,&quot;name&quot;:&quot;7TUj7GN:xP]&gt;_dQ&gt;0L|po|T$wW96n}r+&gt;rk0eQuWGtuVP`L+&quot;},{&quot;id&quot;:1146565428877349759,&quot;name&quot;:&quot;&#39;cRSoAfmOTpI$O/Z_q71D?).&quot;},{&quot;id&quot;:730592368848475167,&quot;name&quot;:&quot;_#s;x&amp;JF{SVCOFr&quot;},{&quot;id&quot;:4233609513665331041,&quot;name&quot;:&quot;}/1j0Iq5=cwS%hUq$_v(DhZQOuXL|hC~HuFNtSOc$Gb;()[cu-X]]9(:GE&quot;},{&quot;id&quot;:6062516839594145730,&quot;name&quot;:&quot;t+)gMstM&gt;{y11Y1+6)E1[4,=t{hH72b,umM(8WG&quot;}],&quot;status&quot;:&quot;pending&quot;},{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;Max&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;pending&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.6:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.6:34]</span>
+                <span class="scenario-name">Find pets by status with valid status values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>619</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.6:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.6:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.14">20:56:20.990 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:20.990 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:20.991 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.6:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.6:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.6:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = [&#39;available&#39;, &#39;sold&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">606</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.22">20:56:21.000 request:
+1 &gt; GET https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available&amp;status=sold
+1 &gt; Accept: application/json
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:56:21.603 response time in milliseconds: 602
+1 &lt; 200
+1 &lt; Date: Sat, 19 Jul 2025 20:56:21 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 7502
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+[{&quot;id&quot;:325,&quot;category&quot;:{&quot;id&quot;:325,&quot;name&quot;:&quot;OpenAPI30&quot;},&quot;name&quot;:&quot;OpenAPI30&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:325,&quot;name&quot;:&quot;OpenAPI30&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:8,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;tag2&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:12345,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;dogs&quot;},&quot;name&quot;:&quot;fluffy&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:632,&quot;name&quot;:&quot;YEAH%20%28id%20should%20be%200%29&quot;,&quot;photoUrls&quot;:[&quot;http://www.myDog.de&quot;,&quot;http://www.myDog.com&quot;,&quot;http://www.myDog.gov&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;YEAH (id should be 0)&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;IT (id should be 15)&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;WORKS (id should be 17)&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:9,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;tag3&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag3&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag4&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:5738692310959948318,&quot;category&quot;:{&quot;id&quot;:9137866063404151324,&quot;name&quot;:&quot;?lX0ZH70uE+u&#39;,,&amp;!Nsr^_95&quot;},&quot;name&quot;:&quot;2_%27%21%2CJ%27%2Fa.gNrNQD%7C%5Edr3_YANkJr%5B%5Erit%2Akw%3BA%2Aww%7CcB%3B2BsUO%3Aqj&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:8237904195468445733,&quot;name&quot;:&quot;UCA4W#5I5=;#=pc)wE.Q(92J%aGYnV|htr#,[00CYX]9mlT]]8I)z&quot;},{&quot;id&quot;:9042419869301615274,&quot;name&quot;:&quot;3kP_X&gt;j&quot;},{&quot;id&quot;:7331127587277756953,&quot;name&quot;:&quot;cJ&quot;},{&quot;id&quot;:6129945069038411361,&quot;name&quot;:&quot;r49T2#R&#39;-VFl&#39;rL!)z~VhuLwt65*&quot;},{&quot;id&quot;:580626227749440276,&quot;name&quot;:&quot;t&#39;(nl&#39;/O8=Jrl0ZAhyu*H--s:p$OYn[0q8xV&amp;loQ{YYHDRge+d&quot;},{&quot;id&quot;:4481426983365554829,&quot;name&quot;:&quot;{9Y4b&lt;sR%jc4=teizC{FB%&quot;},{&quot;id&quot;:3478696502443953543,&quot;name&quot;:&quot;&gt;4G+(aUZew)&#39;L^?h}7V,}&quot;},{&quot;id&quot;:7247920166887964423,&quot;name&quot;:&quot;.y5p[e*iS}QXb+|Cv[%Ji.cI.R&lt;:8iCb~#B;V0;P7zbIl_SEU:,-l3BT&quot;},{&quot;id&quot;:6997744182520772292,&quot;name&quot;:&quot;$T,vW!=$9SP]2xSEU${SLLmSnLs&#39;wh&lt;Z]HsD]vD-9N=K&quot;},{&quot;id&quot;:6135452559212075686,&quot;name&quot;:&quot;tI=Ca~Ngl&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:3773729659354826662,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:7506370948529422032,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:7,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;Lion%201&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:4,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Dog%201&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:8831605011107266754,&quot;category&quot;:{&quot;id&quot;:4341346729141735654,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:110,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;tommy&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752937451527,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940457807,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940527249,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940528288,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1010,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;kkkkkkkkkk&quot;},&quot;name&quot;:&quot;kkkkkkkkk&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;kkkkkk&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941206816,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941295790,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941939099,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941940185,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:999,&quot;name&quot;:&quot;Simon&#39;s Cat&quot;,&quot;photoUrls&quot;:[&quot;[great-photo1.jpg&quot;,&quot;purrfect-pic.png]&quot;,&quot;/tmp/inflector4235280554823553368.tmp&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;animal&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;cat&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1287138758235,&quot;name&quot;:&quot;Woofy Mc Woof&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:365288376085636864,&quot;category&quot;:{&quot;id&quot;:1352470862106004459,&quot;name&quot;:&quot;7^)K[|&quot;},&quot;name&quot;:&quot;TPa&lt;j_1F]PAjgz*17n:C]6XvOlz&#39;`7FK[(]-7C&amp;o&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:1035064212071298965,&quot;name&quot;:&quot;B,^Q`6*`FVvJ7^&quot;},{&quot;id&quot;:2754906777840019049,&quot;name&quot;:&quot;T1KF5P=tN&quot;},{&quot;id&quot;:3789180535090686210,&quot;name&quot;:&quot;+Z^f~GP!f.!rt&quot;},{&quot;id&quot;:1263233678447357766,&quot;name&quot;:&quot;`4#&#39;.~9mk90.yNhMI/ikrAx=&amp;y!|F=oZNYebM|`&lt;BjC1hMGyt&quot;},{&quot;id&quot;:7853340899439686392,&quot;name&quot;:&quot;.U,EjKUpGNB4^OinlUjAe!&quot;},{&quot;id&quot;:4915187511840344116,&quot;name&quot;:&quot;7TUj7GN:xP]&gt;_dQ&gt;0L|po|T$wW96n}r+&gt;rk0eQuWGtuVP`L+&quot;},{&quot;id&quot;:1146565428877349759,&quot;name&quot;:&quot;&#39;cRSoAfmOTpI$O/Z_q71D?).&quot;},{&quot;id&quot;:730592368848475167,&quot;name&quot;:&quot;_#s;x&amp;JF{SVCOFr&quot;},{&quot;id&quot;:4233609513665331041,&quot;name&quot;:&quot;}/1j0Iq5=cwS%hUq$_v(DhZQOuXL|hC~HuFNtSOc$Gb;()[cu-X]]9(:GE&quot;},{&quot;id&quot;:6062516839594145730,&quot;name&quot;:&quot;t+)gMstM&gt;{y11Y1+6)E1[4,=t{hH72b,umM(8WG&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752952149522,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752952150551,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752953975146,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954126994,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954157949,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954228115,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954272051,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954652986,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;Buddy&quot;,&quot;photoUrls&quot;:[&quot;adipisicing laboris&quot;],&quot;tags&quot;:[{&quot;id&quot;:-24265804,&quot;name&quot;:&quot;ex incididunt&quot;}],&quot;status&quot;:&quot;available&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.7:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.7:34]</span>
+                <span class="scenario-name">Find pets by status with valid status values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>813</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.7:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.7:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.14">20:56:21.620 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:21.620 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:21.621 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.7:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.7:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.7:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = [&#39;available&#39;, &#39;pending&#39;, &#39;sold&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">801</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.22">20:56:21.625 request:
+1 &gt; GET https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available&amp;status=pending&amp;status=sold
+1 &gt; Accept: application/json
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:56:22.423 response time in milliseconds: 797
+1 &lt; 200
+1 &lt; Date: Sat, 19 Jul 2025 20:56:22 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 7502
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+[{&quot;id&quot;:325,&quot;category&quot;:{&quot;id&quot;:325,&quot;name&quot;:&quot;OpenAPI30&quot;},&quot;name&quot;:&quot;OpenAPI30&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:325,&quot;name&quot;:&quot;OpenAPI30&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:8,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;tag2&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag3&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:12345,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;dogs&quot;},&quot;name&quot;:&quot;fluffy&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:632,&quot;name&quot;:&quot;YEAH%20%28id%20should%20be%200%29&quot;,&quot;photoUrls&quot;:[&quot;http://www.myDog.de&quot;,&quot;http://www.myDog.com&quot;,&quot;http://www.myDog.gov&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;YEAH (id should be 0)&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;IT (id should be 15)&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;WORKS (id should be 17)&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:9,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;tag3&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag3&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag4&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:5738692310959948318,&quot;category&quot;:{&quot;id&quot;:9137866063404151324,&quot;name&quot;:&quot;?lX0ZH70uE+u&#39;,,&amp;!Nsr^_95&quot;},&quot;name&quot;:&quot;2_%27%21%2CJ%27%2Fa.gNrNQD%7C%5Edr3_YANkJr%5B%5Erit%2Akw%3BA%2Aww%7CcB%3B2BsUO%3Aqj&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:8237904195468445733,&quot;name&quot;:&quot;UCA4W#5I5=;#=pc)wE.Q(92J%aGYnV|htr#,[00CYX]9mlT]]8I)z&quot;},{&quot;id&quot;:9042419869301615274,&quot;name&quot;:&quot;3kP_X&gt;j&quot;},{&quot;id&quot;:7331127587277756953,&quot;name&quot;:&quot;cJ&quot;},{&quot;id&quot;:6129945069038411361,&quot;name&quot;:&quot;r49T2#R&#39;-VFl&#39;rL!)z~VhuLwt65*&quot;},{&quot;id&quot;:580626227749440276,&quot;name&quot;:&quot;t&#39;(nl&#39;/O8=Jrl0ZAhyu*H--s:p$OYn[0q8xV&amp;loQ{YYHDRge+d&quot;},{&quot;id&quot;:4481426983365554829,&quot;name&quot;:&quot;{9Y4b&lt;sR%jc4=teizC{FB%&quot;},{&quot;id&quot;:3478696502443953543,&quot;name&quot;:&quot;&gt;4G+(aUZew)&#39;L^?h}7V,}&quot;},{&quot;id&quot;:7247920166887964423,&quot;name&quot;:&quot;.y5p[e*iS}QXb+|Cv[%Ji.cI.R&lt;:8iCb~#B;V0;P7zbIl_SEU:,-l3BT&quot;},{&quot;id&quot;:6997744182520772292,&quot;name&quot;:&quot;$T,vW!=$9SP]2xSEU${SLLmSnLs&#39;wh&lt;Z]HsD]vD-9N=K&quot;},{&quot;id&quot;:6135452559212075686,&quot;name&quot;:&quot;tI=Ca~Ngl&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:3773729659354826662,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:7506370948529422032,&quot;category&quot;:{&quot;id&quot;:1275104307707503805,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:7,&quot;category&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Lions&quot;},&quot;name&quot;:&quot;Lion%201&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:4,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Dog%201&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:8831605011107266754,&quot;category&quot;:{&quot;id&quot;:4341346729141735654,&quot;name&quot;:&quot;mw:tA!O&#39;Z3tDy(O#UI(#J~}EOZ/eg0JzR&quot;},&quot;name&quot;:&quot;&amp;x)7S1-enTW6m5Pu.40jYO;}6*+{Sz$8pp18e2%C*P53&#39;=wL3i)Bl~5&quot;,&quot;photoUrls&quot;:[&quot;A*Q=FB&#39;FC(6P?C:z85d~lW5-AK4$g.TB&amp;-$|V,&#39;gc{7d:&quot;],&quot;tags&quot;:[{&quot;id&quot;:2950808632391452328,&quot;name&quot;:&quot;d{}Oo|yqJ&#39;5cLlF7&amp;v)RoikEc%6x%&quot;},{&quot;id&quot;:6590880115570263178,&quot;name&quot;:&quot;y6ji3pzFk?z~E&gt;u&#39;{bPZ5XD[;yFG&#39;c9&#39;rv$v36}9A$1}7rSX^k&quot;},{&quot;id&quot;:3510222742934689683,&quot;name&quot;:&quot;!&amp;4w(hU[Y78Ci(|~4XV/qX(D7w?v`q5&lt;&amp;hOVwr|3nSE1}pC]q`T&quot;},{&quot;id&quot;:7808564537049947965,&quot;name&quot;:&quot;_(qoX^EWGEpBAI-[-#1s[]Z5R%*dIl+JpT7i-SMIQY{7&amp;9&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:110,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;tommy&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752937451527,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940457807,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940527249,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752940528288,&quot;name&quot;:&quot;Gemini Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1010,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;kkkkkkkkkk&quot;},&quot;name&quot;:&quot;kkkkkkkkk&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;kkkkkk&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941206816,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941295790,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941939099,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752941940185,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:999,&quot;name&quot;:&quot;Simon&#39;s Cat&quot;,&quot;photoUrls&quot;:[&quot;[great-photo1.jpg&quot;,&quot;purrfect-pic.png]&quot;,&quot;/tmp/inflector4235280554823553368.tmp&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;animal&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;cat&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1287138758235,&quot;name&quot;:&quot;Woofy Mc Woof&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:365288376085636864,&quot;category&quot;:{&quot;id&quot;:1352470862106004459,&quot;name&quot;:&quot;7^)K[|&quot;},&quot;name&quot;:&quot;TPa&lt;j_1F]PAjgz*17n:C]6XvOlz&#39;`7FK[(]-7C&amp;o&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:1035064212071298965,&quot;name&quot;:&quot;B,^Q`6*`FVvJ7^&quot;},{&quot;id&quot;:2754906777840019049,&quot;name&quot;:&quot;T1KF5P=tN&quot;},{&quot;id&quot;:3789180535090686210,&quot;name&quot;:&quot;+Z^f~GP!f.!rt&quot;},{&quot;id&quot;:1263233678447357766,&quot;name&quot;:&quot;`4#&#39;.~9mk90.yNhMI/ikrAx=&amp;y!|F=oZNYebM|`&lt;BjC1hMGyt&quot;},{&quot;id&quot;:7853340899439686392,&quot;name&quot;:&quot;.U,EjKUpGNB4^OinlUjAe!&quot;},{&quot;id&quot;:4915187511840344116,&quot;name&quot;:&quot;7TUj7GN:xP]&gt;_dQ&gt;0L|po|T$wW96n}r+&gt;rk0eQuWGtuVP`L+&quot;},{&quot;id&quot;:1146565428877349759,&quot;name&quot;:&quot;&#39;cRSoAfmOTpI$O/Z_q71D?).&quot;},{&quot;id&quot;:730592368848475167,&quot;name&quot;:&quot;_#s;x&amp;JF{SVCOFr&quot;},{&quot;id&quot;:4233609513665331041,&quot;name&quot;:&quot;}/1j0Iq5=cwS%hUq$_v(DhZQOuXL|hC~HuFNtSOc$Gb;()[cu-X]]9(:GE&quot;},{&quot;id&quot;:6062516839594145730,&quot;name&quot;:&quot;t+)gMstM&gt;{y11Y1+6)E1[4,=t{hH72b,umM(8WG&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752952149522,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752952150551,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752953975146,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954126994,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954157949,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954228115,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954272051,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1752954652986,&quot;name&quot;:&quot;Flow Pet&quot;,&quot;photoUrls&quot;:[&quot;https://gemini.google.com/&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;Buddy&quot;,&quot;photoUrls&quot;:[&quot;adipisicing laboris&quot;],&quot;tags&quot;:[{&quot;id&quot;:-24265804,&quot;name&quot;:&quot;ex incididunt&quot;}],&quot;status&quot;:&quot;available&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:36]</span>
+                <span class="scenario-name">Find pets by status with invalid status value</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>607</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">20:56:22.439 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:22.440 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:22.440 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = &#39;invalidStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">605</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">20:56:22.444 request:
+1 &gt; GET https://petstore3.swagger.io/api/v3/pet/findByStatus?status=invalidStatus
+1 &gt; Accept: application/json
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:56:23.047 response time in milliseconds: 602
+1 &lt; 400
+1 &lt; Date: Sat, 19 Jul 2025 20:56:22 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 143
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+{&quot;code&quot;:400,&quot;message&quot;:&quot;Input error: query parameter `status value `invalidStatus` is not in the allowable values `[available, pending, sold]`&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref failed">41</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.error == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">20:56:23.048 pet_findByStatus_get.feature:41
+And match response.error == &#39;#string&#39;
+match failed: EQUALS
+
+pet_findByStatus_get.feature:41
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:43]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:43]</span>
+                <span class="scenario-name">Find pets by status with no status value</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>617</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:43]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SWAGGER_PETSTORE_OPENAPI_30_API_HOST&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">20:56:23.052 set envVars for key: BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+20:56:23.053 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+20:56:23.053 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">616</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">20:56:23.057 request:
+1 &gt; GET https://petstore3.swagger.io/api/v3/pet/findByStatus
+1 &gt; Accept: application/json
+1 &gt; Host: petstore3.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:56:23.671 response time in milliseconds: 613
+1 &lt; 400
+1 &lt; Date: Sat, 19 Jul 2025 20:56:23 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 30
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Expose-Headers: Content-Disposition
+1 &lt; Server: Jetty(9.4.53.v20231009)
+No status provided. Try again?
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref failed">46</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">20:56:23.672 pet_findByStatus_get.feature:46
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 613, url: https://petstore3.swagger.io/api/v3/pet/findByStatus, response: 
+No status provided. Try again?
+pet_findByStatus_get.feature:46
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref skipped">47</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref skipped">48</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref skipped">49</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref skipped">50</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.id == &#39;##number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref skipped">51</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].category.name == &#39;##string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref skipped">52</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].photoUrls == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref skipped">53</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].tags == &#39;##[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response[*].status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
