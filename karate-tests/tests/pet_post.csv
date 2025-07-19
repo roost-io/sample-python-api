@@ -1,0 +1,2 @@
+id,name,categoryId,categoryName,photoUrls,tags,status
+"10","doggie","1","Dogs","['https://example.com/photo1', 'https://example.com/photo2']","[{'id': 1, 'name': 'tag1'}, {'id': 2, 'name': 'tag2'}]","available"
