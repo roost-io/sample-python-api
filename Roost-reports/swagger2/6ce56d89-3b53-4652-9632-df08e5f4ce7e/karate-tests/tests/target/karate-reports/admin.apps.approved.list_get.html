@@ -1,0 +1,2885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2b349969-def6-458b-a938-5bca5b503947",karate_version:"1.5.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>admin.apps.approved.list_get</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-20 08:17:08 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:56]"><span>[1.1:56]</span> <span>Test GET /api/admin.apps.approved.list with valid parameters</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:56]"><span>[1.2:56]</span> <span>Test GET /api/admin.apps.approved.list with valid parameters</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:58]"><span>[2:58]</span> <span>Test GET /api/admin.apps.approved.list with invalid token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">admin.apps.approved.list_get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test admin.apps.approved.list API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:56]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:56]</span>
+                <span class="scenario-name">Test GET /api/admin.apps.approved.list with valid parameters</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:56]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SLACK_WEB_API_BASE_URL&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">08:17:07.923 set envVars for key: BASE_URL  with  https://slack.com/api 
+08:17:07.923 set envVars for key: IMAGE_UPLOAD_BASE_URL  with  https://virtserver.swaggerhub.com/CellaOnline/Image_Upload/1.0.0 
+08:17:07.923 set envVars for key: SLACK_WEB_API_BASE_URL  with  https://slack.com/api 
+08:17:07.924 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+08:17:07.924 set envVars for key: SWAGGER_PETSTORE_OPENAPI_30_BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+08:17:07.924 set envVars for key: MORTGAGE_LOANS_BASE_URL  with  https://127.0.0.1:4010 
+08:17:07.925 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;Bearer &#39; + karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/admin.apps.approved.list&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param token = &lt;token&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.21">08:17:07.940 admin.apps.approved.list_get.feature:21
+And param token = &lt;token&gt;
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 8; XML document structures must start and end within the same entity.
+admin.apps.approved.list_get.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param limit = 10</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param cursor = </span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param team_id = </span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param enterprise_id = </span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.ok == true</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.approved_apps == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.id == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.app_directory_url == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.app_homepage_url == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_1024 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_128 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_192 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_32 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_36 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.39">
+      <div class="step-ref skipped">39</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_48 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.40">
+      <div class="step-ref skipped">40</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_512 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.41">
+      <div class="step-ref skipped">41</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_64 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_72 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref skipped">43</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_96 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref skipped">44</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_original == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref skipped">45</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.is_app_directory_approved == &#39;#boolean&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.is_internal == &#39;#boolean&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.47">
+      <div class="step-ref skipped">47</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.privacy_policy_url == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref skipped">48</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].date_updated == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref skipped">49</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].last_resolved_by.actor_id == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.50">
+      <div class="step-ref skipped">50</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].last_resolved_by.actor_type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.51">
+      <div class="step-ref skipped">51</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].scopes[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.52">
+      <div class="step-ref skipped">52</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].scopes[*].token_type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.53">
+      <div class="step-ref skipped">53</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.response_metadata.next_cursor == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:56]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:56]</span>
+                <span class="scenario-name">Test GET /api/admin.apps.approved.list with valid parameters</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:56]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SLACK_WEB_API_BASE_URL&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">08:17:07.943 set envVars for key: BASE_URL  with  https://slack.com/api 
+08:17:07.943 set envVars for key: IMAGE_UPLOAD_BASE_URL  with  https://virtserver.swaggerhub.com/CellaOnline/Image_Upload/1.0.0 
+08:17:07.944 set envVars for key: SLACK_WEB_API_BASE_URL  with  https://slack.com/api 
+08:17:07.944 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+08:17:07.944 set envVars for key: SWAGGER_PETSTORE_OPENAPI_30_BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+08:17:07.944 set envVars for key: MORTGAGE_LOANS_BASE_URL  with  https://127.0.0.1:4010 
+08:17:07.945 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;Bearer &#39; + karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/admin.apps.approved.list&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param token = &lt;token&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.21">08:17:07.947 admin.apps.approved.list_get.feature:21
+And param token = &lt;token&gt;
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 8; XML document structures must start and end within the same entity.
+admin.apps.approved.list_get.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param limit = 1000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param cursor = </span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param team_id = </span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param enterprise_id = </span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.ok == true</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.approved_apps == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.id == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.app_directory_url == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.app_homepage_url == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_1024 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_128 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_192 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_32 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_36 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.39">
+      <div class="step-ref skipped">39</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_48 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.40">
+      <div class="step-ref skipped">40</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_512 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.41">
+      <div class="step-ref skipped">41</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_64 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_72 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.43">
+      <div class="step-ref skipped">43</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_96 == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.44">
+      <div class="step-ref skipped">44</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.icons.image_original == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.45">
+      <div class="step-ref skipped">45</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.is_app_directory_approved == &#39;#boolean&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.is_internal == &#39;#boolean&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.47">
+      <div class="step-ref skipped">47</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].app.privacy_policy_url == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.48">
+      <div class="step-ref skipped">48</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].date_updated == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.49">
+      <div class="step-ref skipped">49</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].last_resolved_by.actor_id == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.50">
+      <div class="step-ref skipped">50</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].last_resolved_by.actor_type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.51">
+      <div class="step-ref skipped">51</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].scopes[*].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.52">
+      <div class="step-ref skipped">52</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match each response.approved_apps[*].scopes[*].token_type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.53">
+      <div class="step-ref skipped">53</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.response_metadata.next_cursor == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:58]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:58]</span>
+                <span class="scenario-name">Test GET /api/admin.apps.approved.list with invalid token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>547</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:58]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:58]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseURL = karate.properties[&#39;SLACK_WEB_API_BASE_URL&#39;] || karate.properties[&#39;BASE_URL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">08:17:07.950 set envVars for key: BASE_URL  with  https://slack.com/api 
+08:17:07.950 set envVars for key: IMAGE_UPLOAD_BASE_URL  with  https://virtserver.swaggerhub.com/CellaOnline/Image_Upload/1.0.0 
+08:17:07.950 set envVars for key: SLACK_WEB_API_BASE_URL  with  https://slack.com/api 
+08:17:07.950 set envVars for key: API_HOST  with  https://petstore3.swagger.io/api/v3/ 
+08:17:07.951 set envVars for key: SWAGGER_PETSTORE_OPENAPI_30_BASE_URL  with  https://petstore3.swagger.io/api/v3/ 
+08:17:07.951 set envVars for key: MORTGAGE_LOANS_BASE_URL  with  https://127.0.0.1:4010 
+08:17:07.951 set envVars for key: OPENAI_BASE_URL  with  https://api.openai.com/v1/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:58]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:58]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;Bearer &#39; + karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:58]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(authToken)&#39;, Accept: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/admin.apps.approved.list&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param token = &#39;invalid_token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">545</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">08:17:07.954 request:
+1 &gt; GET https://slack.com/api/api/admin.apps.approved.list?token=invalid_token
+1 &gt; Authorization: Bearer undefined
+1 &gt; Accept: application/json
+1 &gt; Host: slack.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:17:08.494 response time in milliseconds: 530
+1 &lt; 404
+1 &lt; date: Sun, 20 Jul 2025 08:17:08 GMT
+1 &lt; server: Apache
+1 &lt; vary: Accept-Encoding
+1 &lt; x-xss-protection: 0
+1 &lt; x-robots-tag: noindex,nofollow
+1 &lt; pragma: no-cache
+1 &lt; cache-control: private, no-cache, no-store, must-revalidate
+1 &lt; expires: Sat, 26 Jul 1997 05:00:00 GMT
+1 &lt; content-type: text/html; charset=utf-8
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains; preload
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-slack-unique-id: aHymBHGrZjYKk8SUY6vVIwAAED0
+1 &lt; x-slack-backend: r
+1 &lt; set-cookie: utm=%7B%7D; expires=Sun, 03-Aug-2025 08:17:08 GMT; Max-Age=1209600; path=/; domain=.slack.com; secure; SameSite=None
+1 &lt; set-cookie: b=aea9d9fa3e00484b5e85d60f322518ff; expires=Fri, 20-Jul-2035 08:17:08 GMT; Max-Age=315532800; path=/; domain=.slack.com; secure; SameSite=None
+1 &lt; set-cookie: x=aea9d9fa3e00484b5e85d60f322518ff.1752999428; expires=Sun, 20-Jul-2025 08:32:08 GMT; Max-Age=900; path=/; domain=.slack.com; secure; SameSite=None
+1 &lt; via: 1.1 slack-prod.tinyspeck.com, envoy-www-iad-tpjgdfqr,envoy-edge-bom-qwlhokpm
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 211
+1 &lt; x-backend: main_normal main_canary_with_overflow main_control_with_overflow
+1 &lt; x-server: slack-www-hhvm-main-iad-ktss
+1 &lt; x-slack-shared-secret-outcome: no-match
+1 &lt; x-edge-backend: envoy-www
+1 &lt; x-slack-edge-shared-secret-outcome: no-match
+1 &lt; transfer-encoding: chunked
+1 &lt; Set-Cookie: utm=%7B%7D; expires=Sun, 03-Aug-2025 08:17:08 GMT; Max-Age=1209600; path=/; domain=.slack.com; secure; SameSite=None
+1 &lt; Set-Cookie: b=aea9d9fa3e00484b5e85d60f322518ff; expires=Fri, 20-Jul-2035 08:17:08 GMT; Max-Age=315532800; path=/; domain=.slack.com; secure; SameSite=None
+1 &lt; Set-Cookie: x=aea9d9fa3e00484b5e85d60f322518ff.1752999428; expires=Sun, 20-Jul-2025 08:32:08 GMT; Max-Age=900; path=/; domain=.slack.com; secure; SameSite=None
+&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en-US&quot; class=&quot;&quot;&gt;&lt;head&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/webpack.manifest.818dbee41a9709ed6fd8.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script&gt;window.ts_endpoint_url = &quot;https:\/\/slack.com\/beacon\/timing&quot;;(function(e) {
+	var n=Date.now?Date.now():+new Date,r=e.performance||{},t=[],a={},i=function(e,n){for(var r=0,a=t.length,i=[];a&gt;r;r++)t[r][e]==n&amp;&amp;i.push(t[r]);return i},o=function(e,n){for(var r,a=t.length;a--;)r=t[a],r.entryType!=e||void 0!==n&amp;&amp;r.name!=n||t.splice(a,1)};r.now||(r.now=r.webkitNow||r.mozNow||r.msNow||function(){return(Date.now?Date.now():+new Date)-n}),r.mark||(r.mark=r.webkitMark||function(e){var n={name:e,entryType:&quot;mark&quot;,startTime:r.now(),duration:0};t.push(n),a[e]=n}),r.measure||(r.measure=r.webkitMeasure||function(e,n,r){n=a[n].startTime,r=a[r].startTime,t.push({name:e,entryType:&quot;measure&quot;,startTime:n,duration:r-n})}),r.getEntriesByType||(r.getEntriesByType=r.webkitGetEntriesByType||function(e){return i(&quot;entryType&quot;,e)}),r.getEntriesByName||(r.getEntriesByName=r.webkitGetEntriesByName||function(e){return i(&quot;name&quot;,e)}),r.clearMarks||(r.clearMarks=r.webkitClearMarks||function(e){o(&quot;mark&quot;,e)}),r.clearMeasures||(r.clearMeasures=r.webkitClearMeasures||function(e){o(&quot;measure&quot;,e)}),e.performance=r,&quot;function&quot;==typeof define&amp;&amp;(define.amd||define.ajs)&amp;&amp;define(&quot;performance&quot;,[],function(){return r}) // eslint-disable-line
+})(window);&lt;/script&gt;&lt;script&gt;
+
+(function () {
+	
+	window.TSMark = function (mark_label) {
+		if (!window.performance || !window.performance.mark) return;
+		performance.mark(mark_label);
+	};
+	window.TSMark(&#39;start_load&#39;);
+
+	
+	window.TSMeasureAndBeacon = function (measure_label, start_mark_label) {
+		if (!window.performance || !window.performance.mark || !window.performance.measure) {
+			return;
+		}
+
+		performance.mark(start_mark_label + &#39;_end&#39;);
+
+		try {
+			performance.measure(measure_label, start_mark_label, start_mark_label + &#39;_end&#39;);
+			window.TSBeacon(measure_label, performance.getEntriesByName(measure_label)[0].duration);
+		} catch (e) {
+			
+		}
+	};
+
+	
+	if (&#39;sendBeacon&#39; in navigator) {
+		window.TSBeacon = function (label, value) {
+			var endpoint_url = window.ts_endpoint_url || &#39;https://slack.com/beacon/timing&#39;;
+			navigator.sendBeacon(
+				endpoint_url + &#39;?data=&#39; + encodeURIComponent(label + &#39;:&#39; + value),
+				&#39;&#39;,
+			);
+		};
+	} else {
+		window.TSBeacon = function (label, value) {
+			var endpoint_url = window.ts_endpoint_url || &#39;https://slack.com/beacon/timing&#39;;
+			new Image().src = endpoint_url + &#39;?data=&#39; + encodeURIComponent(label + &#39;:&#39; + value);
+		};
+	}
+})();
+&lt;/script&gt;&lt;script&gt;window.TSMark(&#39;step_load&#39;);&lt;/script&gt;&lt;noscript&gt;&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; URL=/api/api/admin.apps.approved.list?token=invalid_token&amp;amp;nojsmode=1&quot;&gt;&lt;/noscript&gt;&lt;script type=&quot;text/javascript&quot;&gt;var safe_hosts = [&#39;app.optimizely.com&#39;, &#39;tinyspeck.dev.slack.com&#39;];
+
+if (self !== top &amp;&amp; safe_hosts.indexOf(top.location.host) === -1) {
+	window.document.write(
+		&#39;\u003Cstyle&gt;body * {display:none !important;}\u003C/style&gt;\u003Ca href=&quot;#&quot; onclick=&#39; +
+			&#39;&quot;top.location.href=window.location.href&quot; style=&quot;display:block !important;padding:10px&quot;&gt;Go to Slack.com\u003C/a&gt;&#39;
+	);
+}
+
+(function() {
+	var timer;
+	if (self !== top &amp;&amp; safe_hosts.indexOf(top.location.host) === -1) {
+		timer = window.setInterval(function() {
+			if (window) {
+				try {
+					var pageEl = document.getElementById(&#39;page&#39;);
+					var clientEl = document.getElementById(&#39;client-ui&#39;);
+					var sectionEls = document.querySelectorAll(&#39;nav, header, section&#39;);
+
+					pageEl.parentNode.removeChild(pageEl);
+					clientEl.parentNode.removeChild(clientEl);
+					for (var i = 0; i &lt; sectionEls.length; i++) {
+						sectionEls[i].parentNode.removeChild(sectionEls[i]);
+					}
+					window.TS = null;
+					window.TD = null;
+					window.clearInterval(timer);
+				} catch (e) {}
+			}
+		}, 200);
+	}
+})();&lt;/script&gt;&lt;meta name=&quot;facebook-domain-verification&quot; content=&quot;chiwsajpoybn2cnqyj9w8mvrey56m0&quot;&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+
+gtag(&#39;consent&#39;, &quot;default&quot;, {&quot;ad_storage&quot;:&quot;granted&quot;,&quot;ad_user_data&quot;:&quot;granted&quot;,&quot;ad_personalization&quot;:&quot;granted&quot;,&quot;personalization_storage&quot;:&quot;granted&quot;,&quot;analytics_storage&quot;:&quot;granted&quot;,&quot;functionality_storage&quot;:&quot;granted&quot;,&quot;security_storage&quot;:&quot;granted&quot;,&quot;wait_for_update&quot;:1000});
+
+function loadGTM() {
+	window.dataLayer.push({
+		&#39;gtm.start&#39;: Date.now(),
+		&#39;event&#39;: &#39;gtm.js&#39;,
+		&#39;AnalyticsActiveGroups&#39;: &quot;,1,2,3,4,&quot;,
+		&#39;policy_ga_only&#39;: false,
+	});
+	var firstScript = document.getElementsByTagName(&#39;script&#39;)[0];
+	var thisScript = document.createElement(&#39;script&#39;);
+	thisScript.async = true;
+	thisScript.src = &#39;//www.googletagmanager.com/gtm.js?id=GTM-KH2LPK&#39;;
+	firstScript.parentNode.insertBefore(thisScript, firstScript);
+}
+
+
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+document.addEventListener(&quot;DOMContentLoaded&quot;, function(e) {
+	var gtmDataLayer = window.dataLayer || [];
+	var gtmTags = document.querySelectorAll(&#39;*[data-gtm-click]&#39;);
+	var gtmClickHandler = function(c) {
+		var gtm_events = this.getAttribute(&#39;data-gtm-click&#39;);
+		if (!gtm_events) return;
+		var gtm_events_arr = gtm_events.split(&quot;,&quot;);
+		for(var e=0; e &lt; gtm_events_arr.length; e++) {
+			var ev = gtm_events_arr[e].trim();
+			gtmDataLayer.push({ &#39;event&#39;: ev });
+		}
+	};
+	for(var g=0; g &lt; gtmTags.length; g++){
+		var elem = gtmTags[g];
+		elem.addEventListener(&#39;click&#39;, gtmClickHandler);
+	}
+});
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+(function(e,c,b,f,d,g,a){e.SlackBeaconObject=d;
+e[d]=e[d]||function(){(e[d].q=e[d].q||[]).push([1*new Date(),arguments])};
+e[d].l=1*new Date();g=c.createElement(b);a=c.getElementsByTagName(b)[0];
+g.async=1;g.src=f;a.parentNode.insertBefore(g,a)
+})(window,document,&quot;script&quot;,&quot;https://a.slack-edge.com/bv1-13/slack_beacon.10d18d9f8a63b0cd84b0.min.js&quot;,&quot;sb&quot;);
+window.sb(&#39;set&#39;, &#39;token&#39;, &#39;3307f436963e02d4f9eb85ce5159744c&#39;);
+window.sb(&#39;track&#39;, &#39;pageview&#39;);
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;			loadGTM();&lt;/script&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;script type=&quot;text/javascript&quot;&gt;var TS_last_log_date = null;
+var TSMakeLogDate = function() {
+	var date = new Date();
+
+	var y = date.getFullYear();
+	var mo = date.getMonth()+1;
+	var d = date.getDate();
+
+	var time = {
+	  h: date.getHours(),
+	  mi: date.getMinutes(),
+	  s: date.getSeconds(),
+	  ms: date.getMilliseconds()
+	};
+
+	Object.keys(time).map(function(moment, index) {
+		if (moment == &#39;ms&#39;) {
+			if (time[moment] &lt; 10) {
+				time[moment] = time[moment]+&#39;00&#39;;
+			} else if (time[moment] &lt; 100) {
+				time[moment] = time[moment]+&#39;0&#39;;
+			}
+		} else if (time[moment] &lt; 10) {
+			time[moment] = &#39;0&#39; + time[moment];
+		}
+	});
+
+	var str = y + &#39;/&#39; + mo + &#39;/&#39; + d + &#39; &#39; + time.h + &#39;:&#39; + time.mi + &#39;:&#39; + time.s + &#39;.&#39; + time.ms;
+	if (TS_last_log_date) {
+		var diff = date-TS_last_log_date;
+		//str+= &#39; (&#39;+diff+&#39;ms)&#39;;
+	}
+	TS_last_log_date = date;
+	return str+&#39; &#39;;
+}
+
+var parseDeepLinkRequest = function(code) {
+	var m = code.match(/&quot;id&quot;:&quot;([CDG][A-Z0-9]{8,})&quot;/);
+	var id = m ? m[1] : null;
+
+	m = code.match(/&quot;team&quot;:&quot;(T[A-Z0-9]{8,})&quot;/);
+	var team = m ? m[1] : null;
+
+	m = code.match(/&quot;message&quot;:&quot;([0-9]+\.[0-9]+)&quot;/);
+	var message = m ? m[1] : null;
+
+	return { id: id, team: team, message: message };
+}
+
+if (&#39;rendererEvalAsync&#39; in window) {
+	var origRendererEvalAsync = window.rendererEvalAsync;
+	window.rendererEvalAsync = function(blob) {
+		try {
+			var data = JSON.parse(decodeURIComponent(atob(blob)));
+			if (data.code.match(/handleDeepLink/)) {
+				var request = parseDeepLinkRequest(data.code);
+				if (!request.id || !request.team || !request.message) return;
+
+				request.cmd = &#39;channel&#39;;
+				TSSSB.handleDeepLinkWithArgs(JSON.stringify(request));
+				return;
+			} else {
+				origRendererEvalAsync(blob);
+			}
+		} catch (e) {
+		}
+	}
+}&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;var TSSSB = {
+	call: function() {
+		return false;
+	}
+};&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;window.addEventListener(&#39;load&#39;, function() {
+	var was_TS = window.TS;
+	delete window.TS;
+	if (was_TS) window.TS = was_TS;
+});&lt;/script&gt;&lt;title&gt;There&#39;s been a glitch… | Slack&lt;/title&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/rollup-style-slack-kit-legacy-adapters.a217c77e14ea4e26ed41.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/rollup-style-plastic.bdaffece99f7d7f240b9.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/modern.vendor.15d6b99040c09114e121.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/application.cd324e7521a9ebb3d8ab.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/admin-megaphone-header.85912cd3312d01e691b0.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/rollup-style-slack-kit-helpers.9c77b7d4b109618ba77b.min.css&quot; rel=&quot;stylesheet&quot; id=&quot;slack_kit_helpers_stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/fb506ae/style/404.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/legacy-style-sticky-nav.c2bd3fa29cc38e369091.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/db887d0/style/footer.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;link href=&quot;https://a.slack-edge.com/bv1-13/legacy-style-libs-lato-2-compressed.b4a5b5cd94ce5aee6359.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;&lt;meta property=&quot;og:site_name&quot; content=&quot;Slack&quot;&gt;&lt;meta property=&quot;og:title&quot; content=&quot;There&#39;s been a glitch…&quot;&gt;&lt;meta property=&quot;og:image&quot; content=&quot;https://a.slack-edge.com/80588/img/404/404-meta-thumb.jpg&quot;&gt;&lt;meta property=&quot;og:description&quot; content=&quot;Slack is where work flows. It&#39;s where the people you need, the information you share, and the tools you use come together to get things done.&quot;&gt;&lt;meta property=&quot;og:url&quot; content=&quot;https://slack.com/api/api/admin.apps.approved.list&quot;&gt;&lt;link id=&quot;favicon&quot; rel=&quot;shortcut icon&quot; href=&quot;https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png&quot; sizes=&quot;16x16 32x32 48x48&quot; type=&quot;image/png&quot;&gt;&lt;/head&gt;&lt;body class=&quot; deprecated&quot;&gt;&lt;script&gt;var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+if (w &gt; 1440) document.querySelector(&#39;body&#39;).classList.add(&#39;widescreen&#39;);&lt;/script&gt;&lt;nav class=&quot;top persistent&quot;&gt;&lt;a href=&quot;https://slack.com/&quot; class=&quot;logo&quot; data-qa=&quot;logo&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=logo&quot; aria-label=&quot;Slack homepage&quot;&gt;&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/is&quot; data-qa=&quot;product&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_product&quot;&gt;Product&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/pricing?ui_step=55&amp;amp;ui_element=5&quot; data-qa=&quot;pricing&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_pricing&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://get.slack.help/hc/en-us&quot; data-qa=&quot;support&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_support&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;mobile_btn download_slack&quot;&gt;&lt;a href=&quot;/get&quot; data-qa=&quot;download_slack&quot; data-gtm-click=&quot;custEv_downloads_store_other&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_download&quot;&gt;Download Slack&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a data-gtm-click=&quot;SignUp,optout_nav_create_team&quot; href=&quot;https://slack.com/create&quot; data-qa=&quot;create_team&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_create_team&quot;&gt;Create a new workspace&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/get-started?entry_point=global#/find&quot; data-gtm-click=&quot;optout_nav_find_team&quot; data-qa=&quot;find_team&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_find_team&quot;&gt;Find your workspace&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;sign_in hide_on_mobile&quot;&gt;&lt;a data-gtm-click=&quot;optout_nav_signin&quot; href=&quot;https://slack.com/signin&quot; class=&quot;btn_sticky btn_filled&quot; data-qa=&quot;sign_in&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_sign_in&quot;&gt;Sign in&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;mobile_btn mobile_menu_btn&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn_sticky&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_mobile_menu_btn&quot;&gt;Menu&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;nav class=&quot;mobile_menu loading menu_scroll&quot; aria-hidden=&quot;true&quot;&gt;&lt;div class=&quot;mobile_menu_wrapper&quot;&gt;&lt;div class=&quot;mobile_menu_header&quot;&gt;&lt;a href=&quot;https://slack.com/&quot; class=&quot;logo&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_logo&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;close&quot; aria-label=&quot;close&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_menu_close&quot;&gt;&lt;ts-icon class=&quot;ts_icon ts_icon_times&quot;&gt;&lt;/ts-icon&gt;&lt;/a&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/is&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_product&quot;&gt;Product&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/pricing?ui_step=55&amp;amp;ui_element=5&quot; class=&quot;mobile_nav_pricing&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_pricing&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://get.slack.help/hc/en-us&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_support&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/get&quot; data-gtm-click=&quot;custEv_downloads_store_other&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_download&quot;&gt;Download &lt;span class=&quot;optional_desktop_nav_message&quot;&gt;the Slack app&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul class=&quot;mobile_menu_footer&quot;&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/signin&quot; data-gtm-click=&quot;optout_nav_signin&quot; target=&quot;_blank&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_sign_in&quot;&gt;&lt;ts-icon class=&quot;ts_icon small float_none team_icon ts_icon_plus default signup_icon&quot;&gt;&lt;/ts-icon&gt;&lt;span class=&quot;switcher_label&quot;&gt;Sign in&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a data-gtm-click=&quot;SignUp,optout_nav_create_team&quot; href=&quot;https://slack.com/get-started?entry_point=global#/create&quot; target=&quot;_blank&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=nav_create_team&quot;&gt;&lt;ts-icon class=&quot;ts_icon small float_none team_icon c-icon--slack default signup_icon&quot;&gt;&lt;/ts-icon&gt;&lt;span class=&quot;switcher_label&quot;&gt;Create a new workspace&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div id=&quot;page&quot; class=&quot;&quot;&gt;&lt;div id=&quot;page_contents&quot; data-qa=&quot;page_contents&quot; class=&quot;&quot;&gt;&lt;div data-automount-component=&quot;AdminMegaphoneHeaderContainer&quot; data-automount-props=&quot;{&amp;quot;isFullWidth&amp;quot;:false,&amp;quot;pageType&amp;quot;:&amp;quot;default&amp;quot;}&quot;&gt;&lt;/div&gt;&lt;div id=&quot;preload&quot;&gt;&lt;/div&gt;&lt;div id=&quot;content&quot; data-background=&quot;https://a.slack-edge.com/80588/img/404/marrakesh-meadow-80.jpg&quot;&gt;&lt;img id=&quot;background&quot; src=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&quot;&gt;&lt;div id=&quot;sprite-wrapper&quot;&gt;&lt;div class=&quot;sprite piggy piggy_chewing&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite chicken chicken_walk_lr&quot;&gt;&lt;div class=&quot;sub_sprite&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;sprite chicken chicken_peck_2x flipped&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite piggy piggy_walk piggy_walk_lr&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite chicken chicken_walk_rl flipped&quot;&gt;&lt;div class=&quot;sub_sprite&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;sprite piggy piggy_walk flipped piggy_walk_rl&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_angle butterfly_angle_lr&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_angle_1 butterfly_angle_1_lr&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_rooked butterfly_rooked_lr&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_side butterfly_side_lr&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_angle flipped butterfly_angle_rl bottom&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_angle_1 flipped butterfly_angle_1_rl bottom&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_rooked flipped butterfly_rooked_rl bottom&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sprite butterfly butterfly_side flipped butterfly_side_rl bottom&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;loader&quot;&gt;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;svg width=&quot;32px&quot; height=&quot;32px&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot; preserveAspectRatio=&quot;xMidYMid&quot; class=&quot;uil-heart&quot;&gt;&lt;rect x=&quot;0&quot; y=&quot;0&quot; width=100 height=100 fill=&quot;none&quot; class=&quot;bk&quot;&gt;&lt;/rect&gt;&lt;g transform=&quot;translate(50 50)&quot;&gt;&lt;g&gt;&lt;g transform=&quot;translate(-50 -50)&quot;&gt;&lt;path d=&quot;M90,30.2c0-11-9-20.1-20-20.1s-20,9.1-20,20.2c0,0.2,0-0.3,0,0.7H50c0-1,0-0.6,0-0.8c0-11-9-20.1-20-20.1s-20,9.1-20,20.2 c0,0.2,0-0.3,0,0.7h0c0.3,20,30,39.5,40,55c10-15.5,39.7-35,40-55h0C90,30,90,30.4,90,30.2z&quot; fill=&quot;#f02&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;animateTransform attributeName=&quot;transform&quot; type=&quot;scale&quot; from=&quot;1.3&quot; to=&quot;0.9&quot; dur=&quot;1s&quot; repeatCount=&quot;indefinite&quot; calcMode=&quot;spline&quot; values=&quot;1.3;0.9;1.1;0.9&quot; keyTimes=&quot;0;0.3;0.301;1&quot; keySplines=&quot;0 0.75 0.25 1;0 1 0 1;0 .75 .25 1&quot;&gt;&lt;/animateTransform&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;&lt;h1&gt;&lt;i class=&quot;ts_icon ts_icon_warning mustard_yellow&quot;&gt;&lt;/i&gt;There’s been a glitch…&lt;/h1&gt;&lt;p&gt;We’re not quite sure what went wrong. You can go back, or try looking on our &lt;a href=&quot;http://get.slack.help/hc/en-us&quot; target=&quot;_blank&quot;&gt;Help Center&lt;/a&gt; if you need a hand.&lt;/p&gt;&lt;/div&gt;&lt;noscript&gt;&lt;style&gt;#loader {
+						display: none;
+					}&lt;/style&gt;&lt;/noscript&gt;&lt;script&gt;
+// fire 404
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+	&#39;event&#39; : &#39;Error404&#39;,
+});
+
+(function() {
+	// quick hack: 8-bit alpha-friendly logo
+	var logo = document.getElementById(&#39;header_logo&#39;);
+	var alt_src = &#39;data:image/png;base64,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&#39;;
+	if (logo) {
+		logo = logo.getElementsByTagName(&#39;img&#39;)[0];
+		if (!logo) return;
+		logo.src = alt_src;
+	}
+}());
+&lt;/script&gt;&lt;/div&gt;&lt;div id=&quot;overlay&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer data-qa=&quot;footer&quot;&gt;&lt;section class=&quot;links&quot;&gt;&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;col span_1_of_4 nav_col&quot;&gt;&lt;ul&gt;&lt;li class=&quot;cat_1&quot;&gt;Using Slack&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/is&quot; data-qa=&quot;product_footer&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_product&quot;&gt;Product&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/enterprise&quot; data-qa=&quot;enterprise_footer&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_enterprise&quot;&gt;Enterprise&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/pricing?ui_step=28&amp;amp;ui_element=5&quot; data-qa=&quot;pricing_footer&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_pricing&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://get.slack.help/hc/en-us&quot; data-qa=&quot;support_footer&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_support&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/guides&quot; data-qa=&quot;getting_started&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_getting_started&quot;&gt;Slack Guides&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/marketplace&quot; data-qa=&quot;app_directory&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_app_directory&quot;&gt;Slack Marketplace&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://api.slack.com/&quot; data-qa=&quot;api&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_api&quot;&gt;API&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;col span_1_of_4 nav_col&quot;&gt;&lt;ul&gt;&lt;li class=&quot;cat_2&quot;&gt;Slack &lt;ts-icon class=&quot;ts_icon_heart&quot;&gt;&lt;/ts-icon&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/careers&quot; data-qa=&quot;jobs&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_jobs&quot;&gt;Jobs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/customers&quot; data-qa=&quot;customers&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_customers&quot;&gt;Customers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/developers&quot; data-qa=&quot;developers&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_developers&quot;&gt;Developers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/events&quot; data-qa=&quot;events&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_events&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slackhq.com/&quot; data-qa=&quot;blog_footer&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;col span_1_of_4 nav_col&quot;&gt;&lt;ul&gt;&lt;li class=&quot;cat_3&quot;&gt;Legal&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/privacy-policy&quot; data-qa=&quot;privacy&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_privacy&quot;&gt;Privacy&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/trust/security&quot; data-qa=&quot;security&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_security&quot;&gt;Security&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/terms-of-service&quot; data-qa=&quot;tos&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_tos&quot;&gt;Terms of Service&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/legal&quot; data-qa=&quot;policies&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_policies&quot;&gt;Policies&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;col span_1_of_4 nav_col&quot;&gt;&lt;ul&gt;&lt;li class=&quot;cat_4&quot;&gt;Handy Links&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/downloads&quot; data-qa=&quot;downloads&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_downloads&quot;&gt;Download desktop app&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/downloads&quot; data-qa=&quot;downloads_mobile&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_downloads_mobile&quot;&gt;Download mobile app&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/brand-guidelines&quot; data-qa=&quot;brand_guidelines&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_brand_guidelines&quot;&gt;Brand Guidelines&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slackatwork.com&quot; data-qa=&quot;slack_at_work&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_slack_at_work&quot;&gt;Slack at Work&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://slack-status.com&quot; data-qa=&quot;status&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_status&quot;&gt;Status&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;div class=&quot;footnote&quot;&gt;&lt;section&gt;&lt;a href=&quot;https://slack.com&quot; aria-label=&quot;Slack homepage&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_slack_icon&quot;&gt;&lt;ts-icon class=&quot;c-icon--slack&quot; aria-hidden&gt;&lt;/ts-icon&gt;&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://slack.com/help/requests/new&quot; data-qa=&quot;contact_us&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_contact_us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/SlackHQ&quot; data-qa=&quot;slack_twitter&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_slack_twitter&quot; aria-label=&quot;Slack on Twitter&quot;&gt;&lt;ts-icon class=&quot;ts_icon_twitter&quot; aria-hidden&gt;&lt;/ts-icon&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;yt&quot;&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw&quot; data-qa=&quot;slack_youtube&quot; data-clog-event=&quot;WEBSITE_CLICK&quot; data-clog-params=&quot;click_target=footer_slack_youtube&quot; aria-label=&quot;Slack on YouTube&quot;&gt;&lt;ts-icon class=&quot;ts_icon_youtube&quot; aria-hidden&gt;&lt;/ts-icon&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;/div&gt;&lt;/footer&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+/**
+ * A placeholder function that the build script uses to
+ * replace file paths with their CDN versions.
+ *
+ * @param {String} file_path - File path
+ * @returns {String}
+ */
+function vvv(file_path) {
+		 var vvv_warning = &#39;You cannot use vvv on dynamic values. Please make sure you only pass in static file paths.&#39;; if (window.TS &amp;&amp; window.TS.warn) { window.TS.warn(vvv_warning); } else { console.warn(vvv_warning); } 
+	return file_path;
+}
+
+var cdn_url = &quot;https:\/\/a.slack-edge.com&quot;;
+var vvv_abs_url = &quot;https:\/\/slack.com\/&quot;;
+var inc_js_setup_data = {
+	emoji_sheets: {
+		apple: &#39;https://a.slack-edge.com/80588/img/emoji_2017_12_06/sheet_apple_64_indexed_256.png&#39;,
+		google: &#39;https://a.slack-edge.com/80588/img/emoji_2017_12_06/sheet_google_64_indexed_256.png&#39;,
+	},
+};
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;	// common boot_data
+	var boot_data = {&quot;api_url&quot;:&quot;\/api\/&quot;,&quot;app&quot;:&quot;web&quot;,&quot;user_id&quot;:null,&quot;team_id&quot;:&quot;T00000000&quot;,&quot;visitor_uid&quot;:&quot;aea9d9fa3e00484b5e85d60f322518ff&quot;,&quot;no_login&quot;:true,&quot;version_ts&quot;:1752929332,&quot;version_uid&quot;:&quot;6f0d9d9df23e2d21df5d0f508c6bc64feecc6560&quot;,&quot;cache_version&quot;:&quot;v21-nomad&quot;,&quot;cache_ts_version&quot;:&quot;v2-bunny&quot;,&quot;redir_domain&quot;:&quot;slack-redir.net&quot;,&quot;cdn&quot;:{&quot;edges&quot;:[&quot;https:\/\/a.slack-edge.com\/&quot;,&quot;https:\/\/b.slack-edge.com\/&quot;,&quot;https:\/\/a.slack-edge.com\/&quot;],&quot;avatars&quot;:&quot;https:\/\/ca.slack-edge.com\/&quot;,&quot;downloads&quot;:&quot;https:\/\/downloads.slack-edge.com\/&quot;,&quot;files&quot;:&quot;https:\/\/slack-files.com\/&quot;},&quot;signin_url&quot;:&quot;https:\/\/slack.com\/signin&quot;,&quot;abs_root_url&quot;:&quot;https:\/\/slack.com\/&quot;,&quot;team_url&quot;:&quot;&quot;,&quot;image_proxy_url&quot;:&quot;https:\/\/slack-imgs.com\/&quot;,&quot;beacon_timing_url&quot;:&quot;https:\/\/slack.com\/beacon\/timing&quot;,&quot;beacon_error_url&quot;:&quot;https:\/\/slack.com\/beacon\/error&quot;,&quot;clog_url&quot;:&quot;clog\/track\/&quot;,&quot;api_token&quot;:null,&quot;vvv_paths&quot;:{&quot;lz_string&quot;:&quot;https:\/\/a.slack-edge.com\/bv1-13\/lz-string-1.4.4.worker.8de1b00d670ff3dc706a0.js&quot;,&quot;codemirror&quot;:&quot;https:\/\/a.slack-edge.com\/bv1-13\/codemirror.min.a92e58236015d40c6f5d.min.js&quot;,&quot;codemirror_addon_simple&quot;:&quot;https:\/\/a.slack-edge.com\/bv1-13\/codemirror_simple.d9067ca5fc09bf285326.min.js&quot;,&quot;codemirror_load&quot;:&quot;https:\/\/a.slack-edge.com\/bv1-13\/codemirror_load.69e4c828f18ef59ce667.min.js&quot;,&quot;codemirror_files&quot;:{&quot;javascript&quot;:&quot;https:\/\/a.slack-edge.com\/bv1-13\/codemirror_lang_javascript.c82307ca2a0d2f3cd7e4.min.js&quot;}},&quot;notification_sounds&quot;:[{&quot;value&quot;:&quot;b2.mp3&quot;,&quot;label&quot;:&quot;Ding&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/b2.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/b2.ogg&quot;},{&quot;value&quot;:&quot;animal_stick.mp3&quot;,&quot;label&quot;:&quot;Boing&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/animal_stick.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/animal_stick.ogg&quot;},{&quot;value&quot;:&quot;been_tree.mp3&quot;,&quot;label&quot;:&quot;Drop&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/been_tree.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/been_tree.ogg&quot;},{&quot;value&quot;:&quot;complete_quest_requirement.mp3&quot;,&quot;label&quot;:&quot;Ta-da&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/complete_quest_requirement.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/complete_quest_requirement.ogg&quot;},{&quot;value&quot;:&quot;confirm_delivery.mp3&quot;,&quot;label&quot;:&quot;Plink&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/confirm_delivery.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/confirm_delivery.ogg&quot;},{&quot;value&quot;:&quot;flitterbug.mp3&quot;,&quot;label&quot;:&quot;Wow&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/flitterbug.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/flitterbug.ogg&quot;},{&quot;value&quot;:&quot;here_you_go_lighter.mp3&quot;,&quot;label&quot;:&quot;Here you go&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/here_you_go_lighter.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/here_you_go_lighter.ogg&quot;},{&quot;value&quot;:&quot;hi_flowers_hit.mp3&quot;,&quot;label&quot;:&quot;Hi&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/hi_flowers_hit.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/hi_flowers_hit.ogg&quot;},{&quot;value&quot;:&quot;knock_brush.mp3&quot;,&quot;label&quot;:&quot;Knock Brush&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/knock_brush.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/knock_brush.ogg&quot;},{&quot;value&quot;:&quot;save_and_checkout.mp3&quot;,&quot;label&quot;:&quot;Whoa!&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/save_and_checkout.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/save_and_checkout.ogg&quot;},{&quot;value&quot;:&quot;item_pickup.mp3&quot;,&quot;label&quot;:&quot;Yoink&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/item_pickup.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/item_pickup.ogg&quot;},{&quot;value&quot;:&quot;hummus.mp3&quot;,&quot;label&quot;:&quot;Hummus&quot;,&quot;url&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/hummus.mp3&quot;,&quot;url_ogg&quot;:&quot;https:\/\/a.slack-edge.com\/58f5096\/sounds\/push\/hummus.ogg&quot;},{&quot;value&quot;:&quot;none&quot;,&quot;label&quot;:&quot;None&quot;}],&quot;img&quot;:{&quot;app_icon&quot;:&quot;https:\/\/a.slack-edge.com\/80588\/img\/slack_growl_icon_vogue.png&quot;},&quot;page_needs_enterprise&quot;:false,&quot;page_needs_custom_emoji&quot;:false,&quot;is_deprecated_webclient_browser&quot;:false,&quot;is_unsupported_webclient_browser&quot;:true,&quot;default_tz&quot;:&quot;America\/Los_Angeles&quot;,&quot;feature_builder_story_step&quot;:false,&quot;feature_olug_remove_required_workspace_setting&quot;:false,&quot;feature_file_threads&quot;:true,&quot;feature_broadcast_indicator&quot;:true,&quot;feature_sonic_emoji&quot;:true,&quot;feature_attachments_inline&quot;:false,&quot;feature_desktop_symptom_events&quot;:false,&quot;feature_gdpr_user_join_tos&quot;:true,&quot;feature_user_invite_tos_april_2018&quot;:true,&quot;feature_channel_mgmt_message_count&quot;:false,&quot;feature_channel_exports&quot;:false,&quot;feature_allow_intra_word_formatting&quot;:true,&quot;feature_slim_scrollbar&quot;:false,&quot;feature_edge_upload_proxy_check&quot;:false,&quot;feature_set_tz_automatically&quot;:true,&quot;feature_attachments_v2&quot;:true,&quot;feature_beacon_js_errors&quot;:false,&quot;feature_user_app_disable_speed_bump&quot;:true,&quot;feature_apps_manage_permissions_scope_changes&quot;:true,&quot;feature_ia_member_profile&quot;:true,&quot;feature_desktop_reload_on_generic_error&quot;:true,&quot;feature_desktop_extend_app_menu&quot;:false,&quot;feature_desktop_restart_service_worker&quot;:false,&quot;feature_wta_stop_creation&quot;:true,&quot;feature_admin_email_change_confirm&quot;:false,&quot;feature_improved_email_rendering&quot;:true,&quot;feature_recent_desktop_files&quot;:true,&quot;feature_cea_allowlist_changes&quot;:false,&quot;feature_cea_channel_management&quot;:true,&quot;feature_cea_admin_controls&quot;:false,&quot;feature_cea_allowlist_changes_plus&quot;:false,&quot;feature_ia_layout&quot;:false,&quot;feature_threaded_call_block&quot;:true,&quot;feature_enterprise_mobile_device_check&quot;:true,&quot;feature_trace_jq_init&quot;:true,&quot;feature_seven_days_email_update&quot;:true,&quot;feature_channel_sections&quot;:true,&quot;feature_show_email_forwarded_by&quot;:false,&quot;feature_mpdm_audience_expansion&quot;:true,&quot;feature_remove_email_preview_link&quot;:true,&quot;feature_desktop_enable_tslog&quot;:false,&quot;feature_email_determine_charset&quot;:true,&quot;feature_no_deprecation_in_updater&quot;:false,&quot;feature_pea_domain_allowlist&quot;:true,&quot;feature_composer_auth_admin&quot;:false,&quot;client_logs&quot;:{&quot;0&quot;:{&quot;numbers&quot;:[&quot;0&quot;],&quot;user_facing&quot;:false},&quot;2&quot;:{&quot;numbers&quot;:[&quot;2&quot;],&quot;user_facing&quot;:false},&quot;4&quot;:{&quot;numbers&quot;:[&quot;4&quot;],&quot;user_facing&quot;:false},&quot;5&quot;:{&quot;numbers&quot;:[&quot;5&quot;],&quot;user_facing&quot;:false},&quot;23&quot;:{&quot;numbers&quot;:[&quot;23&quot;],&quot;user_facing&quot;:false},&quot;sounds&quot;:{&quot;name&quot;:&quot;sounds&quot;,&quot;numbers&quot;:[&quot;37&quot;]},&quot;37&quot;:{&quot;name&quot;:&quot;sounds&quot;,&quot;numbers&quot;:[&quot;37&quot;],&quot;user_facing&quot;:true},&quot;47&quot;:{&quot;numbers&quot;:[&quot;47&quot;],&quot;user_facing&quot;:false},&quot;48&quot;:{&quot;numbers&quot;:[&quot;48&quot;],&quot;user_facing&quot;:false},&quot;Message History&quot;:{&quot;name&quot;:&quot;Message History&quot;,&quot;numbers&quot;:[&quot;58&quot;]},&quot;58&quot;:{&quot;name&quot;:&quot;Message History&quot;,&quot;numbers&quot;:[&quot;58&quot;],&quot;user_facing&quot;:true},&quot;67&quot;:{&quot;numbers&quot;:[&quot;67&quot;],&quot;user_facing&quot;:false},&quot;72&quot;:{&quot;numbers&quot;:[&quot;72&quot;],&quot;user_facing&quot;:false},&quot;73&quot;:{&quot;numbers&quot;:[&quot;73&quot;],&quot;user_facing&quot;:false},&quot;82&quot;:{&quot;numbers&quot;:[&quot;82&quot;],&quot;user_facing&quot;:false},&quot;88&quot;:{&quot;numbers&quot;:[&quot;88&quot;],&quot;user_facing&quot;:false},&quot;91&quot;:{&quot;numbers&quot;:[&quot;91&quot;],&quot;user_facing&quot;:false},&quot;93&quot;:{&quot;numbers&quot;:[&quot;93&quot;],&quot;user_facing&quot;:false},&quot;96&quot;:{&quot;numbers&quot;:[&quot;96&quot;],&quot;user_facing&quot;:false},&quot;99&quot;:{&quot;numbers&quot;:[&quot;99&quot;],&quot;user_facing&quot;:false},&quot;Channel Marking (MS)&quot;:{&quot;name&quot;:&quot;Channel Marking (MS)&quot;,&quot;numbers&quot;:[&quot;141&quot;]},&quot;141&quot;:{&quot;name&quot;:&quot;Channel Marking (MS)&quot;,&quot;numbers&quot;:[&quot;141&quot;],&quot;user_facing&quot;:true},&quot;Channel Marking (Client)&quot;:{&quot;name&quot;:&quot;Channel Marking (Client)&quot;,&quot;numbers&quot;:[&quot;142&quot;]},&quot;142&quot;:{&quot;name&quot;:&quot;Channel Marking (Client)&quot;,&quot;numbers&quot;:[&quot;142&quot;],&quot;user_facing&quot;:true},&quot;365&quot;:{&quot;numbers&quot;:[&quot;365&quot;],&quot;user_facing&quot;:false},&quot;389&quot;:{&quot;numbers&quot;:[&quot;389&quot;],&quot;user_facing&quot;:false},&quot;438&quot;:{&quot;numbers&quot;:[&quot;438&quot;],&quot;user_facing&quot;:false},&quot;444&quot;:{&quot;numbers&quot;:[&quot;444&quot;],&quot;user_facing&quot;:false},&quot;481&quot;:{&quot;numbers&quot;:[&quot;481&quot;],&quot;user_facing&quot;:false},&quot;488&quot;:{&quot;numbers&quot;:[&quot;488&quot;],&quot;user_facing&quot;:false},&quot;529&quot;:{&quot;numbers&quot;:[&quot;529&quot;],&quot;user_facing&quot;:false},&quot;552&quot;:{&quot;numbers&quot;:[&quot;552&quot;],&quot;user_facing&quot;:false},&quot;dashboard&quot;:{&quot;name&quot;:&quot;dashboard&quot;,&quot;numbers&quot;:[&quot;666&quot;]},&quot;666&quot;:{&quot;name&quot;:&quot;dashboard&quot;,&quot;numbers&quot;:[&quot;666&quot;],&quot;user_facing&quot;:false},&quot;667&quot;:{&quot;numbers&quot;:[&quot;667&quot;],&quot;user_facing&quot;:false},&quot;773&quot;:{&quot;numbers&quot;:[&quot;773&quot;],&quot;user_facing&quot;:false},&quot;777&quot;:{&quot;numbers&quot;:[&quot;777&quot;],&quot;user_facing&quot;:false},&quot;794&quot;:{&quot;numbers&quot;:[&quot;794&quot;],&quot;user_facing&quot;:false},&quot;Client Responsiveness&quot;:{&quot;name&quot;:&quot;Client Responsiveness&quot;,&quot;user_facing&quot;:false,&quot;numbers&quot;:[&quot;808&quot;]},&quot;808&quot;:{&quot;name&quot;:&quot;Client Responsiveness&quot;,&quot;user_facing&quot;:false,&quot;numbers&quot;:[&quot;808&quot;]},&quot;Message Pane Scrolling&quot;:{&quot;name&quot;:&quot;Message Pane Scrolling&quot;,&quot;numbers&quot;:[&quot;888&quot;]},&quot;888&quot;:{&quot;name&quot;:&quot;Message Pane Scrolling&quot;,&quot;numbers&quot;:[&quot;888&quot;],&quot;user_facing&quot;:true},&quot;Unread banner and divider&quot;:{&quot;name&quot;:&quot;Unread banner and divider&quot;,&quot;numbers&quot;:[&quot;999&quot;]},&quot;999&quot;:{&quot;name&quot;:&quot;Unread banner and divider&quot;,&quot;numbers&quot;:[&quot;999&quot;],&quot;user_facing&quot;:true},&quot;1000&quot;:{&quot;numbers&quot;:[&quot;1000&quot;],&quot;user_facing&quot;:false},&quot;Duplicate badges (desktop app icons)&quot;:{&quot;name&quot;:&quot;Duplicate badges (desktop app icons)&quot;,&quot;numbers&quot;:[&quot;1701&quot;]},&quot;1701&quot;:{&quot;name&quot;:&quot;Duplicate badges (desktop app icons)&quot;,&quot;numbers&quot;:[&quot;1701&quot;],&quot;user_facing&quot;:true},&quot;Members&quot;:{&quot;name&quot;:&quot;Members&quot;,&quot;numbers&quot;:[&quot;1975&quot;]},&quot;1975&quot;:{&quot;name&quot;:&quot;Members&quot;,&quot;numbers&quot;:[&quot;1975&quot;],&quot;user_facing&quot;:true},&quot;lazy loading&quot;:{&quot;name&quot;:&quot;lazy loading&quot;,&quot;numbers&quot;:[&quot;1989&quot;]},&quot;1989&quot;:{&quot;name&quot;:&quot;lazy loading&quot;,&quot;numbers&quot;:[&quot;1989&quot;],&quot;user_facing&quot;:true},&quot;thin_channel_membership&quot;:{&quot;name&quot;:&quot;thin_channel_membership&quot;,&quot;numbers&quot;:[&quot;1990&quot;]},&quot;1990&quot;:{&quot;name&quot;:&quot;thin_channel_membership&quot;,&quot;numbers&quot;:[&quot;1990&quot;],&quot;user_facing&quot;:true},&quot;stats&quot;:{&quot;name&quot;:&quot;stats&quot;,&quot;numbers&quot;:[&quot;1991&quot;]},&quot;1991&quot;:{&quot;name&quot;:&quot;stats&quot;,&quot;numbers&quot;:[&quot;1991&quot;],&quot;user_facing&quot;:true},&quot;ms&quot;:{&quot;name&quot;:&quot;ms&quot;,&quot;numbers&quot;:[&quot;1996&quot;]},&quot;1996&quot;:{&quot;name&quot;:&quot;ms&quot;,&quot;numbers&quot;:[&quot;1996&quot;],&quot;user_facing&quot;:true},&quot;shared_channels_connection&quot;:{&quot;name&quot;:&quot;shared_channels_connection&quot;,&quot;numbers&quot;:[&quot;1999&quot;]},&quot;1999&quot;:{&quot;name&quot;:&quot;shared_channels_connection&quot;,&quot;numbers&quot;:[&quot;1999&quot;],&quot;user_facing&quot;:false},&quot;dnd&quot;:{&quot;name&quot;:&quot;dnd&quot;,&quot;numbers&quot;:[&quot;2002&quot;]},&quot;2002&quot;:{&quot;name&quot;:&quot;dnd&quot;,&quot;numbers&quot;:[&quot;2002&quot;],&quot;user_facing&quot;:true},&quot;2003&quot;:{&quot;numbers&quot;:[&quot;2003&quot;],&quot;user_facing&quot;:false},&quot;Threads&quot;:{&quot;name&quot;:&quot;Threads&quot;,&quot;numbers&quot;:[&quot;2004&quot;]},&quot;2004&quot;:{&quot;name&quot;:&quot;Threads&quot;,&quot;numbers&quot;:[&quot;2004&quot;],&quot;user_facing&quot;:true},&quot;2005&quot;:{&quot;numbers&quot;:[&quot;2005&quot;],&quot;user_facing&quot;:false},&quot;Reactions&quot;:{&quot;name&quot;:&quot;Reactions&quot;,&quot;numbers&quot;:[&quot;2006&quot;]},&quot;2006&quot;:{&quot;name&quot;:&quot;Reactions&quot;,&quot;numbers&quot;:[&quot;2006&quot;],&quot;user_facing&quot;:true},&quot;TSSSB.focusTabAndSwitchToChannel&quot;:{&quot;name&quot;:&quot;TSSSB.focusTabAndSwitchToChannel&quot;,&quot;numbers&quot;:[&quot;2007&quot;]},&quot;2007&quot;:{&quot;name&quot;:&quot;TSSSB.focusTabAndSwitchToChannel&quot;,&quot;numbers&quot;:[&quot;2007&quot;],&quot;user_facing&quot;:false},&quot;Presence Detection&quot;:{&quot;name&quot;:&quot;Presence Detection&quot;,&quot;numbers&quot;:[&quot;2017&quot;]},&quot;2017&quot;:{&quot;name&quot;:&quot;Presence Detection&quot;,&quot;numbers&quot;:[&quot;2017&quot;],&quot;user_facing&quot;:true},&quot;mc_sibs&quot;:{&quot;name&quot;:&quot;mc_sibs&quot;,&quot;numbers&quot;:[&quot;9999&quot;]},&quot;9999&quot;:{&quot;name&quot;:&quot;mc_sibs&quot;,&quot;numbers&quot;:[&quot;9999&quot;],&quot;user_facing&quot;:false},&quot;Member searching&quot;:{&quot;name&quot;:&quot;Member searching&quot;,&quot;numbers&quot;:[&quot;90211&quot;]},&quot;90211&quot;:{&quot;name&quot;:&quot;Member searching&quot;,&quot;numbers&quot;:[&quot;90211&quot;],&quot;user_facing&quot;:true},&quot;98765&quot;:{&quot;numbers&quot;:[&quot;98765&quot;],&quot;user_facing&quot;:false},&quot;8675309&quot;:{&quot;numbers&quot;:[&quot;8675309&quot;],&quot;user_facing&quot;:false}},&quot;other_accounts&quot;:{},&quot;slack_connect_create_bots_count&quot;:0,&quot;slack_connect_manage_bots_count&quot;:0};
+	boot_data.start_ms = Date.now();
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/rollup-core_required_libs.ab3928062168fcd66900.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/admin-megaphone-header.d745138a680d68098687.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/modern.vendor.a91d6e3ebd69037a2012.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/application.83ca5019568f6c43144b.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/rollup-core_required_ts.c045cf7b838b2be70f15.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/TS.web.c88ad95a670db0cbda74.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/signals.8d417efb7bc301391309.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/rollup-core_web.4ae92698237991268df5.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/rollup-secondary_a_required.58f51477af8b58e217c2.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/rollup-secondary_b_required.7d89083c18f5abaac5a0.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;TS.boot(boot_data);&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/TS.web._404.c02b711b0359c3f967dc.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/sticky_nav.80b8b06d9da2a60c4612.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://a.slack-edge.com/bv1-13/footer.f740972b11a50621644c.min.js&quot; onload=&quot;window._cdn ? _cdn.ok(this, arguments) : null&quot; onerror=&quot;window._cdn ? _cdn.failed(this, arguments) : null&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;boot_data.no_login = true;&lt;/script&gt;&lt;style&gt;.color_9f69e7:not(.nuc) {color:#9F69E7;}.color_4bbe2e:not(.nuc) {color:#4BBE2E;}.color_e7392d:not(.nuc) {color:#E7392D;}.color_3c989f:not(.nuc) {color:#3C989F;}.color_674b1b:not(.nuc) {color:#674B1B;}.color_e96699:not(.nuc) {color:#E96699;}.color_e0a729:not(.nuc) {color:#E0A729;}.color_684b6c:not(.nuc) {color:#684B6C;}.color_5b89d5:not(.nuc) {color:#5B89D5;}.color_2b6836:not(.nuc) {color:#2B6836;}.color_99a949:not(.nuc) {color:#99A949;}.color_df3dc0:not(.nuc) {color:#DF3DC0;}.color_4cc091:not(.nuc) {color:#4CC091;}.color_9b3b45:not(.nuc) {color:#9B3B45;}.color_d58247:not(.nuc) {color:#D58247;}.color_bb86b7:not(.nuc) {color:#BB86B7;}.color_5a4592:not(.nuc) {color:#5A4592;}.color_db3150:not(.nuc) {color:#DB3150;}.color_235e5b:not(.nuc) {color:#235E5B;}.color_9e3997:not(.nuc) {color:#9E3997;}.color_53b759:not(.nuc) {color:#53B759;}.color_c386df:not(.nuc) {color:#C386DF;}.color_385a86:not(.nuc) {color:#385A86;}.color_a63024:not(.nuc) {color:#A63024;}.color_5870dd:not(.nuc) {color:#5870DD;}.color_ea2977:not(.nuc) {color:#EA2977;}.color_50a0cf:not(.nuc) {color:#50A0CF;}.color_d55aef:not(.nuc) {color:#D55AEF;}.color_d1707d:not(.nuc) {color:#D1707D;}.color_43761b:not(.nuc) {color:#43761B;}.color_e06b56:not(.nuc) {color:#E06B56;}.color_8f4a2b:not(.nuc) {color:#8F4A2B;}.color_902d59:not(.nuc) {color:#902D59;}.color_de5f24:not(.nuc) {color:#DE5F24;}.color_a2a5dc:not(.nuc) {color:#A2A5DC;}.color_827327:not(.nuc) {color:#827327;}.color_3c8c69:not(.nuc) {color:#3C8C69;}.color_8d4b84:not(.nuc) {color:#8D4B84;}.color_84b22f:not(.nuc) {color:#84B22F;}.color_4ec0d6:not(.nuc) {color:#4EC0D6;}.color_e23f99:not(.nuc) {color:#E23F99;}.color_e475df:not(.nuc) {color:#E475DF;}.color_619a4f:not(.nuc) {color:#619A4F;}.color_a72f79:not(.nuc) {color:#A72F79;}.color_7d414c:not(.nuc) {color:#7D414C;}.color_aba727:not(.nuc) {color:#ABA727;}.color_965d1b:not(.nuc) {color:#965D1B;}.color_4d5e26:not(.nuc) {color:#4D5E26;}.color_dd8527:not(.nuc) {color:#DD8527;}.color_bd9336:not(.nuc) {color:#BD9336;}.color_e85d72:not(.nuc) {color:#E85D72;}.color_dc7dbb:not(.nuc) {color:#DC7DBB;}.color_bc3663:not(.nuc) {color:#BC3663;}.color_9d8eee:not(.nuc) {color:#9D8EEE;}.color_8469bc:not(.nuc) {color:#8469BC;}.color_73769d:not(.nuc) {color:#73769D;}.color_b14cbc:not(.nuc) {color:#B14CBC;}&lt;/style&gt;
+
+&lt;!-- slack-www-hhvm-main-iad-ktss/ 2025-07-20 01:17:08/ v6f0d9d9df23e2d21df5d0f508c6bc64feecc6560/ B:H --&gt;
+
+&lt;div data-automount-component=&quot;ModalContainer&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus != 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref failed">63</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.ok == false</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.63">08:17:08.500 admin.apps.approved.list_get.feature:63
+And match response.ok == false
+match failed: EQUALS
+  $ | data types don&#39;t match (NULL:BOOLEAN)
+  null
+  false
+
+admin.apps.approved.list_get.feature:63
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref skipped">64</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.error == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
