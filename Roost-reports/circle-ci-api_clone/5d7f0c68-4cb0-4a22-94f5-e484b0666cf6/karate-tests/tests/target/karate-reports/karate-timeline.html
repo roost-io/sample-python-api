@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"me_get[1:19]","start":1753073456043,"end":1753073457090,"title":"me_get[1:19] 04:50:56.043-04:50:57.090 Get current user information with API Key authentication","className":"failed"},{"id":2,"group":1,"content":"me_get[2:30]","start":1753073457098,"end":1753073457399,"title":"me_get[2:30] 04:50:57.098-04:50:57.399 Get current user information with Basic authentication","className":"failed"},{"id":3,"group":1,"content":"me_get[3:45]","start":1753073457405,"end":1753073457662,"title":"me_get[3:45] 04:50:57.405-04:50:57.662 Get current user information with query parameter authentication","className":"failed"},{"id":4,"group":1,"content":"me_get[4:56]","start":1753073457669,"end":1753073457927,"title":"me_get[4:56] 04:50:57.669-04:50:57.927 Get current user information with invalid API Key authentication"},{"id":5,"group":1,"content":"me_get[5:63]","start":1753073457933,"end":1753073458194,"title":"me_get[5:63] 04:50:57.933-04:50:58.194 Get current user information with invalid Basic authentication"},{"id":6,"group":1,"content":"me_get[6:71]","start":1753073458200,"end":1753073458451,"title":"me_get[6:71] 04:50:58.200-04:50:58.451 Get current user information with invalid query parameter authentication"},{"id":7,"group":1,"content":"me_get[7:78]","start":1753073458457,"end":1753073458715,"title":"me_get[7:78] 04:50:58.457-04:50:58.715 Get current user information without authentication"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
