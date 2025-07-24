@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"me_get[1:19]","start":1753338792215,"end":1753338793311,"title":"me_get[1:19] 06:33:12.215-06:33:13.311 Get current user information with Circle-Token authentication","className":"failed"},{"id":2,"group":1,"content":"me_get[2:31]","start":1753338793323,"end":1753338793620,"title":"me_get[2:31] 06:33:13.323-06:33:13.620 Get current user information with Basic authentication","className":"failed"},{"id":3,"group":1,"content":"me_get[3:47]","start":1753338793627,"end":1753338793904,"title":"me_get[3:47] 06:33:13.627-06:33:13.904 Get current user information with circle-token query parameter"},{"id":4,"group":1,"content":"me_get[4:59]","start":1753338793910,"end":1753338794157,"title":"me_get[4:59] 06:33:13.910-06:33:14.157 Get current user information with invalid Circle-Token authentication"},{"id":5,"group":1,"content":"me_get[5:67]","start":1753338794162,"end":1753338794416,"title":"me_get[5:67] 06:33:14.162-06:33:14.416 Get current user information with invalid Basic authentication"},{"id":6,"group":1,"content":"me_get[6:76]","start":1753338794420,"end":1753338794674,"title":"me_get[6:76] 06:33:14.420-06:33:14.674 Get current user information with invalid circle-token query parameter"},{"id":7,"group":1,"content":"me_get[7:84]","start":1753338794679,"end":1753338794914,"title":"me_get[7:84] 06:33:14.679-06:33:14.914 Get current user information without authentication"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
