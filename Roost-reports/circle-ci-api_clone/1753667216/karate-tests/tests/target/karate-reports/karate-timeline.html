@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"me_get[1:18]","start":1753667700383,"end":1753667701901,"title":"me_get[1:18] 07:25:00.383-07:25:01.901 Get current user information with Circle-Token authentication","className":"failed"},{"id":2,"group":1,"content":"me_get[2:30]","start":1753667701937,"end":1753667702216,"title":"me_get[2:30] 07:25:01.937-07:25:02.216 Get current user information with Basic authentication","className":"failed"},{"id":3,"group":1,"content":"me_get[3:46]","start":1753667702226,"end":1753667702320,"title":"me_get[3:46] 07:25:02.226-07:25:02.320 Get current user information with circle-token query parameter","className":"failed"},{"id":4,"group":1,"content":"me_get[4:58]","start":1753667702336,"end":1753667702381,"title":"me_get[4:58] 07:25:02.336-07:25:02.381 Get current user information with invalid Circle-Token authentication","className":"failed"},{"id":5,"group":1,"content":"me_get[5:66]","start":1753667702394,"end":1753667702449,"title":"me_get[5:66] 07:25:02.394-07:25:02.449 Get current user information with invalid Basic authentication","className":"failed"},{"id":6,"group":1,"content":"me_get[6:75]","start":1753667702464,"end":1753667702505,"title":"me_get[6:75] 07:25:02.464-07:25:02.505 Get current user information with invalid circle-token query parameter","className":"failed"},{"id":7,"group":1,"content":"me_get[7:83]","start":1753667702518,"end":1753667702558,"title":"me_get[7:83] 07:25:02.518-07:25:02.558 Get current user information without authentication","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
